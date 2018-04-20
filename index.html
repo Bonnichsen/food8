@@ -16,7 +16,49 @@
 </head>
 
 <body>
-    <script src="java.js"></script>
+
+    <section data-container></section>
+    <template data-template>
+       <article>
+          <img src="" alt="-" data-billede>
+           <h2 data-overskrift></h2>
+           <h3 data-manchet></h3>
+           <p data-textcontent></p>
+       </article>
+
+   </template>
+
+    <script>
+        let jSonUrl = "http://benjaminbonnichsen.dk/wp_test/wordpress/wp-json/wp/v2/observationer";
+        let display = document.querySelector("[data-templatedisplay]");
+        let template = document.querySelector("[data-template]");
+        let observationer = [];
+
+        document.addEventListener("DOMContentLoaded", hentJson);
+
+        async function hentJson() {
+            let dataJson = await fetch(jSonUrl);
+            observationer = await dataJson.json();
+            console.log("Stop making fetch happen Gretchen!");
+            visObservationer();
+        };
+
+
+        function visObservationer() {
+            observationer.forEach(observation => {
+                console.log(observation);
+                let templateModtager = document.querySelector("[data-container]");
+                let klon = template.cloneNode(true).content;
+
+                klon.querySelector("[data-overskrift]").textContent = observation.title.rendered;
+                klon.querySelector("[data-billede]").src = observation.acf.foto;
+                klon.querySelector("[data-manchet]").textContent = observation.acf.fuglenavn;
+                klon.querySelector("[data-textcontent]").innerHTML = observation.content.rendered;
+                templateModtager.appendChild(klon);
+                console.log("The Klon War is over!")
+            })
+        }
+    </script>
 </body>
 
 </html>
