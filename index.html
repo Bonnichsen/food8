@@ -17,10 +17,18 @@
 
 <body>
 
-    <section data-container></section>
+    <div id="grid-container">
+
+        <section data-container></section>
+
+
+    </div>
+
+
     <template data-template>
        <article>
           <img src="" alt="-" data-billede>
+          <p data-dato></p>
            <h2 data-overskrift></h2>
            <h3 data-manchet></h3>
            <p data-textcontent></p>
@@ -29,34 +37,34 @@
    </template>
 
     <script>
-        let jSonUrl = "http://benjaminbonnichsen.dk/wp_test/wordpress/wp-json/wp/v2/observationer";
+        let jSonUrl = "http://benjaminbonnichsen.dk/food8/wordpress/wp-json/wp/v2/nyheder";
         let display = document.querySelector("[data-templatedisplay]");
         let template = document.querySelector("[data-template]");
-        let observationer = [];
+        let steder = [];
 
         document.addEventListener("DOMContentLoaded", hentJson);
 
         async function hentJson() {
             let dataJson = await fetch(jSonUrl);
-            observationer = await dataJson.json();
+            steder = await dataJson.json();
             console.log("Stop making fetch happen Gretchen!");
-            visObservationer();
+            visSteder();
         };
 
 
-        function visObservationer() {
-            observationer.forEach(observation => {
-                console.log(observation);
+        function visSteder() {
+            steder.forEach(sted => {
+                console.log(sted);
                 let templateModtager = document.querySelector("[data-container]");
                 let klon = template.cloneNode(true).content;
 
-                klon.querySelector("[data-overskrift]").textContent = observation.title.rendered;
-                klon.querySelector("[data-billede]").src = observation.acf.foto;
-                klon.querySelector("[data-manchet]").textContent = observation.acf.fuglenavn;
-                klon.querySelector("[data-textcontent]").innerHTML = observation.content.rendered;
+                klon.querySelector("[data-overskrift]").textContent = sted.title.rendered;
+                klon.querySelector("[data-billede]").src = sted.acf.billede;
+                klon.querySelector("[data-manchet]").textContent = sted.acf.manchet;
+                klon.querySelector("[data-textcontent]").innerHTML = sted.content.rendered;
                 templateModtager.appendChild(klon);
                 console.log("The Klon War is over!")
-            })
+            });
         }
     </script>
 </body>
