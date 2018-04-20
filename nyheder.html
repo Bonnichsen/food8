@@ -17,7 +17,7 @@
 
 <body>
 
-    <div id="grid-container">
+    <div id="grid-container" class="nyheder">
 
         <section data-container></section>
 
@@ -62,7 +62,7 @@
                 klon.querySelector("[data-billede]").src = nyhed.acf.billede;
                 klon.querySelector("[data-manchet]").textContent = nyhed.acf.manchet;
                 klon.querySelector("[data-dato]").textContent = nyhed.acf.dato;
-                klon.querySelector("[data-textcontent]").innerHTML = nyhed.content.rendered;
+                //                klon.querySelector("[data-textcontent]").innerHTML = nyhed.content.rendered;
                 templateModtager.appendChild(klon);
                 console.log("The Klon War is over!")
             });

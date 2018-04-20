@@ -9,22 +9,104 @@ body {
 
 #grid-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(12, 1fr);
     width: 100vw;
 }
 
 [data-container] {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
     width: 100%;
-    margin: 0 auto;
 }
 
-article {
+/*-- INDEX --*/
+
+.splash {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+[data-splashvideo] {
+    width: 100vw;
+    height: 56.25vw;
+    border: none;
+    position: fixed;
+    z-index: -1;
+}
+
+.logo {
+    background-image: url(img/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
     width: 30vw;
+    height: 15vw;
+    position: absolute;
+    top: 8.5vw;
+    left: 36vw;
+    z-index: 200;
 }
 
-img {
+.frame{
+    background-color: rgba(10, 70, 37, 0.41);
+    width: 100vw;
+    height: 100vh;
+}
+
+.quote{
+    position: absolute;
+    top: 26vw;
+    left: 30vw;
+    color: #f1f1f1;
+    font-size: 5vw;
+    text-align: center;
+    font-family: "Fusterd Brush";
+    width: 40vw;
+    border-top: dotted 5px white;
+    border-bottom: dotted 5px white;
+}
+
+/*-- STEDER --*/
+
+.steder [data-container] {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1.5vw;
+    grid-column: 2/12;
+}
+
+.steder article {
+    width: 40vw;
+}
+
+.steder img {
+    width: 100%;
+}
+
+/*-- NYHEDER --*/
+
+.nyheder [data-container] {
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1vw;
+}
+
+.nyheder article {
+    width: 22vw;
+}
+
+.nyheder img {
+    width: 100%;
+}
+
+/*-- OM FOOD8 --*/
+
+.about [data-container] {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+}
+
+.about article {
+    width: 42.5vw;
+}
+
+.about img {
     width: 100%;
 }
