@@ -32,6 +32,7 @@ body {
     border: none;
     position: fixed;
     z-index: -1;
+    filter: brightness(0.6);
 }
 
 .logo {
@@ -44,15 +45,18 @@ body {
     top: 8.5vw;
     left: 36vw;
     z-index: 200;
+    filter: brightness(1.4);
 }
 
-.frame{
+.frame {
     background-color: rgba(10, 70, 37, 0.41);
     width: 100vw;
     height: 100vh;
+    position: fixed;
+    z-index: 199;
 }
 
-.quote{
+.quote {
     position: absolute;
     top: 26vw;
     left: 30vw;
