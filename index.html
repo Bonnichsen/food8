@@ -2,88 +2,94 @@
 <html lang="da">
 
 <head>
+    <!-- BASIC -->
+    <title>Din virtuelle foodcourt | Food8.dk</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
     <!--- META TEXT: SEO --->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Food8 er en restaurationsgruppe af individuelle restauratører der har slået sig sammen. Her kan man gå på opdagelse blandt kendte og ukendte restauranter, madbutikker og barer – eller det, som vi ganske enkelt kalder steder.">
-    <meta name="author" content="">
-    <meta name="keywords" content="">
-    <meta name="title" content="">
+    <meta name="author" content="Food8.dk">
+    <meta name="keywords" content="food8, food8.dk restaurationsgruppe, restauratører, foodcourt, virtuel, restaurant, bar, madbutik, sted, steder, spiseoplevelse, copenhagen, københavn, kbh, kødbyen, nørrebro, guide, food, mad, kontakt, contact, østerbro, newsletter, nyhedsbrev">
+    <meta name="title" content="Din virtuelle foodcourt | Food8.dk">
 
-    <!-- META TEXT: SEO END -->
-    <title>Din virtuelle foodcourt | Food8.dk</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://food8.dk/wp-content/themes/monoco-theme/public/images/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://food8.dk/wp-content/themes/monoco-theme/public/images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://food8.dk/wp-content/themes/monoco-theme/public/images/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="https://food8.dk/wp-content/themes/monoco-theme/public/images/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://food8.dk/wp-content/themes/monoco-theme/public/images/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="https://food8.dk/wp-content/themes/monoco-theme/public/images/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="public/images/apple-touch-icon-152x152.png">
+    <link rel="icon" type="image/png" href="https://food8.dk/wp-content/themes/monoco-theme/public/images/favicon-196x196.png" sizes="196x196">
+    <link rel="icon" type="image/png" href="https://food8.dk/wp-content/themes/monoco-theme/public/images/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="https://food8.dk/wp-content/themes/monoco-theme/public/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://food8.dk/wp-content/themes/monoco-theme/public/images/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="https://food8.dk/wp-content/themes/monoco-theme/public/images/favicon-128.png" sizes="128x128">
 </head>
 
 <body>
 
-    <div id="grid-container">
 
-        <section class="splash">
+    <section class="splash">
+        <iframe class="fullvid" width="1280" height="720" src="https://www.youtube.com/embed/5DoFZ7wHxqk?autoplay=1&loop=1&cc_load_policy=1rel=0&amp;controls=0&amp;showinfo=0&playlist=5DoFZ7wHxqk" frameborder="0" allowfullscreen></iframe>
 
-            <iframe width="420" height="315" src="https://www.youtube.com/embed/5DoFZ7wHxqk?autoplay=1&loop=1&cc_load_policy=1rel=0&amp;controls=0&amp;showinfo=0&playlist=5DoFZ7wHxqk" data-splashvideo></iframe>
+        <div class="logo"></div>
+        <div class="frame">
 
-            <div class="logo "></div>
-            <div class="frame ">
-
-                <div class="quote ">
-                    <h2></h2>
-                    <p>Vi danner rammen for din spiseoplevelse på et af vores steder, hvor den gode historie er i fokus.</p>
-                </div>
+            <div class="quote">
+                <h2></h2>
+                <p>Vi danner rammen for din spiseoplevelse på et af vores steder, hvor den gode historie er i fokus.</p>
             </div>
+        </div>
 
-
-
-
-        </section>
-
-        <section data-container></section>
-
-
-    </div>
-
-
-    <template data-template>
-       <article>
-          <img src=" " alt="- " data-billede>
-          <p data-dato></p>
-           <h2 data-overskrift></h2>
-           <h3 data-manchet></h3>
-           <p data-textcontent></p>
-       </article>
-
-   </template>
+    </section>
 
     <script>
-        let jSonUrl = "http://benjaminbonnichsen.dk/food8/wordpress/wp-json/wp/v2/ ";
-        let display = document.querySelector("[data-templatedisplay] ");
-        let template = document.querySelector("[data-template] ");
-        let steder = [];
+        $(document).ready(function() {
+            $('body')
+                .prepend('<div class="vidcover"></div>')
+                .hover(
+                    function() {
+                        $('.vidcover').css({
+                            'opacity': '0.4'
+                        })
+                    },
+                    function() {
+                        $('.vidcover').css({
+                            'opacity': '0'
+                        })
+                    }
+                );
 
-        document.addEventListener("DOMContentLoaded ", hentJson);
+            $(window).resize(function() {
+                var theWidth = $(window).width();
+                var theHeight = $(window).height();
+                var newWidth = (theHeight * 1.77777778);
+                var newHeight = (theWidth / 1.77777778);
 
-        async function hentJson() {
-            let dataJson = await fetch(jSonUrl);
-            steder = await dataJson.json();
-            console.log("Stop making fetch happen Gretchen! ");
-            visSteder();
-        };
+                if ((theWidth > 1280) && (newHeight > theHeight)) {
+                    $('.fullvid').css({
+                        'width': theWidth,
+                        'height': newHeight
+                    });
+                }
 
+                if ((theHeight > 720) && (newWidth > theWidth)) {
+                    $('.fullvid').css({
+                        'height': theHeight,
+                        'width': newWidth
+                    });
+                }
 
-        function visSteder() {
-            steder.forEach(sted => {
-                console.log(sted);
-                let templateModtager = document.querySelector("[data-container] ");
-                let klon = template.cloneNode(true).content;
-
-                klon.querySelector("[data-overskrift] ").textContent = sted.title.rendered;
-                klon.querySelector("[data-billede] ").src = sted.acf.billede;
-                klon.querySelector("[data-manchet] ").textContent = sted.acf.manchet;
-                klon.querySelector("[data-textcontent] ").innerHTML = sted.content.rendered;
-                templateModtager.appendChild(klon);
-                console.log("The Klon War is over! ")
-            });
-        }
+                $('.vidcover').css({
+                    'height': theHeight,
+                    'width': theWidth
+                });
+            }).resize();
+        });
     </script>
 </body>
 
