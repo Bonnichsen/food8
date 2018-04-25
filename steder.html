@@ -41,6 +41,7 @@
 
     <template data-template>
 <article>
+      <div class="stedlogo_container"><img src="" alt="-" data-stedlogo></div>
     <div class="img_container"><img src="" alt="-" data-billede></div>
     <h2 data-overskrift></h2>
     <button data-button="">Læs mere</button>
@@ -74,6 +75,7 @@
 
                 klon.querySelector("[data-overskrift]").textContent = sted.title.rendered;
                 klon.querySelector("[data-billede]").src = sted.acf.billede;
+                klon.querySelector("[data-stedlogo]").src = sted.acf.stedlogo.url;
                 klon.querySelector("[data-button]").addEventListener("click", () => {
                     location.href = "sted.html?id=" + sted.id;
                 });

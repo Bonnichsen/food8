@@ -273,6 +273,15 @@ footer {
     height: 100%;
 }
 
+.stedlogo_container img {
+    position: absolute;
+    width: 20vw;
+    height: 20vw;
+    z-index: 1;
+    margin-top: 10vw;
+    margin-left: 10vw;
+}
+
 /*-- NYHEDER --*/
 
 .nyheder {
@@ -345,7 +354,7 @@ footer {
     width: 90vw;
 }
 
-<<<<<<< HEAD .sted h2 {
+.sted h2 {
     margin: 15px 0;
     text-align:
 }
@@ -390,6 +399,10 @@ footer {
 
     .steder h2 {
         /*		text-align: center;*/
+    }
+
+    .stedlogo_container img {
+        height: 20vw;
     }
 
     .nyheder [data-container] {
