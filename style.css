@@ -39,7 +39,7 @@ button {
 header {
     width: 100vw;
     height: auto;
-    background-color: rgba(10, 70, 37, 0.41);
+    background-color: #334052;
 }
 
 nav {
@@ -51,6 +51,7 @@ nav a {
     color: white;
     margin: 1vw;
     text-decoration: none;
+    font-family: "Raleway";
 }
 
 /*-- DROPDOWN --*
@@ -248,11 +249,6 @@ nav a {
 }
 
 /*-- OM FOOD8 --*/
-
-#body_food8 {
-    background-color: #f2f2f2;
-}
-
 
 .about [data-container] {
     margin: 50px 0 0 50px;
