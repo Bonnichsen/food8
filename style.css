@@ -3,6 +3,15 @@
     padding: 0;
 }
 
+@font-face {
+    font-family: 'fusterd_brushregular';
+    src: url('font/fusterd_brush-webfont.woff2') format('woff2'),
+    url('font/fusterd_brush-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 h1 {
     font-family: "Raleway";
 }
