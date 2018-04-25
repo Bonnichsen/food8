@@ -280,6 +280,7 @@ footer {
     z-index: 1;
     margin-top: 10vw;
     margin-left: 10vw;
+    opacity: 0.85;
 }
 
 /*-- NYHEDER --*/
