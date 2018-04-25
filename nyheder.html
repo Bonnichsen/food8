@@ -62,7 +62,9 @@
                 klon.querySelector("[data-billede]").src = nyhed.acf.billede;
                 klon.querySelector("[data-manchet]").textContent = nyhed.acf.manchet;
                 klon.querySelector("[data-dato]").textContent = nyhed.acf.dato;
-                //                klon.querySelector("[data-textcontent]").innerHTML = nyhed.content.rendered;
+                klon.querySelector("[data-billede]").addEventListener("click", () => {
+                    location.href = "nyhed.html?id=" + nyhed.id;
+                });
                 templateModtager.appendChild(klon);
                 console.log("The Klon War is over!")
             });
