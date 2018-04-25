@@ -16,19 +16,31 @@
 </head>
 
 <body>
+    <section class="logo_section">
+        <a href="index.html" class="logo"></a>
+    </section>
+    <header>
+        <nav>
+            <a href="index.html">HOME</a>
+            <a href="steder.html">STEDER</a>
+            <a href="nyheder.html">NYHEDER</a>
+            <a href="om-food8.html">OM FOOD8</a>
+        </nav>
+    </header>
 
-    <div id="grid-container" class="nyheder">
+    <div id="grid-container" class="nyhed">
 
         <section data-container>
             <article>
-                <img src="" alt="-" data-billede>
-                <p data-dato></p>
-                <h2 data-overskrift></h2>
-                <h3 data-manchet></h3>
-                <p data-textcontent></p>
+                <div class="nyhedsbillede"><img src="" alt="-" data-billede></div>
+                <div class="nyhedsindhold">
+                    <p data-dato></p>
+                    <h2 data-overskrift></h2>
+                    <h3 data-manchet></h3>
+                    <p data-textcontent></p>
+                </div>
             </article>
         </section>
-
 
     </div>
 
@@ -56,6 +68,7 @@
             display.querySelector("[data-billede]").src = nyhed.acf.billede;
             display.querySelector("[data-manchet]").textContent = nyhed.acf.manchet;
             display.querySelector("[data-dato]").textContent = nyhed.acf.dato;
+            display.querySelector("[data-textcontent]").innerHTML = nyhed.content.rendered;
 
             console.log("You're now in singleview!")
         };
