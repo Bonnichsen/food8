@@ -313,6 +313,15 @@ footer {
 	height: 100%;
 }
 
+.stedlogo_container img {
+    position: absolute;
+    width: 20vw;
+    height: 20vw;
+    z-index: 1;
+    margin-top: 10vw;
+    margin-left: 10vw;
+}
+
 /*-- NYHEDER --*/
 
 .nyheder {
@@ -413,6 +422,7 @@ footer {
 
 
 @media screen and (max-width:560px) {
+<<<<<<< HEAD
 	.steder [data-container] {
 
 		grid-template-columns: repeat(1, 1fr);
@@ -439,3 +449,35 @@ footer {
 	.nyheder article {
 		width: 60vw;
 	}
+=======
+    .steder [data-container] {
+
+        grid-template-columns: repeat(1, 1fr);
+        max-width: 90vw;
+    }
+    .steder article {
+        width: 100%;
+
+    }
+    .steder img {
+        display: grid;
+        grid-column: 1/2;
+        height: 100%;
+    }
+
+    .steder h2 {
+        /*		text-align: center;*/
+    }
+
+    .stedlogo_container img {
+        height: 20vw;
+    }
+
+    .nyheder [data-container] {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .nyheder article {
+        width: 60vw;
+    }
+>>>>>>> origin/master
