@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+h1 {
+    font-family: "Raleway";
+}
+
 h2 {
     font-family: "Raleway";
 }
@@ -59,6 +63,14 @@ footer {
     color: white;
     height: auto;
     padding: 1.5vw;
+}
+
+/*-- OVERSKRIFT TIL HVER SIDE --*/
+
+.overskrift h1 {
+    text-align: center;
+    margin: 20px;
+    text-transform: uppercase;
 }
 
 /*-- DROPDOWN --*
