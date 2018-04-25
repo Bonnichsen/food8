@@ -432,7 +432,7 @@ footer {
 
 
 @media screen and (max-width:560px) {
-    <<<<<<< HEAD .steder [data-container] {
+    .steder [data-container] {
 
         grid-template-columns: repeat(1, 1fr);
         max-width: 90vw;
@@ -458,7 +458,7 @@ footer {
     .nyheder article {
         width: 60vw;
     }
-    =======.steder [data-container] {
+    .steder [data-container] {
 
         grid-template-columns: repeat(1, 1fr);
         max-width: 90vw;
@@ -488,4 +488,3 @@ footer {
     .nyheder article {
         width: 60vw;
     }
-    > > > > > > > origin/master
