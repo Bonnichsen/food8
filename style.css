@@ -242,17 +242,36 @@ footer {
 
 /*-- NYHEDER --*/
 
+.nyheder {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .nyheder [data-container] {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 1vw;
 }
 
 .nyheder article {
     width: 22vw;
+    margin: 15px;
+}
+
+.nyheder button {
+    margin-top: 10px;
 }
 
 .nyheder img {
     width: 100%;
+}
+
+.nyheder h2 {
+    margin: 7px 0;
+}
+
+.nyheder h3 {
+    font-weight: 100;
+    font-size: 14px;
 }
 
 /*-- OM FOOD8 --*/

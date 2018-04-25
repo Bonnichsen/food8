@@ -42,6 +42,7 @@
            <h2 data-overskrift></h2>
            <h3 data-manchet></h3>
            <p data-textcontent></p>
+            <button data-button="">Læs mere</button>
        </article>
 
    </template>
@@ -73,6 +74,7 @@
                 klon.querySelector("[data-billede]").src = nyhed.acf.billede;
                 klon.querySelector("[data-manchet]").textContent = nyhed.acf.manchet;
                 klon.querySelector("[data-dato]").textContent = nyhed.acf.dato;
+
                 //                klon.querySelector("[data-textcontent]").innerHTML = nyhed.content.rendered;
                 templateModtager.appendChild(klon);
                 console.log("The Klon War is over!")
