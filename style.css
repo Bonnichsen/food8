@@ -236,7 +236,9 @@ footer {
 }
 
 #p_index {
-    font-family: "Fusterd Brush";
+    font-size: 30px;
+    font-weight: 400;
+    margin: 20px 0;
 }
 
 /*-- STEDER --*/
@@ -327,8 +329,7 @@ footer {
     width: 90vw;
 }
 
-<<<<<<< HEAD
-.sted h2 {
+<<<<<<< HEAD .sted h2 {
     margin: 15px 0;
     text-align:
 }
@@ -342,11 +343,9 @@ footer {
     margin: 15px 0;
     font-weight: 100;
 }
-=======
-@media screen and (max-width:900px) {
->>>>>>> origin/master
 
-    .nyheder [data-container] {
+=======@media screen and (max-width:900px) {
+    > > > > > > > origin/master .nyheder [data-container] {
         grid-template-columns: repeat(2, 1fr);
     }
 
