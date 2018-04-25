@@ -58,6 +58,10 @@ nav a {
     font-family: "Raleway";
 }
 
+nav a:hover {
+    font-weight: bolder;
+}
+
 footer {
     background-color: #334052;
     color: white;
@@ -307,9 +311,40 @@ footer {
     margin: 15px 0;
 }
 
-/*-----STEDER------*/
+/*-----STED------*/
 
+.sted [data-container] {
+    margin: 50px 0 0 2.5vw;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+.sted article {
+    width: 90vw;
+}
+
+.sted img {
+    width: 90vw;
+}
+
+<<<<<<< HEAD
+.sted h2 {
+    margin: 15px 0;
+    text-align:
+}
+
+.sted h3 {
+    margin: 15px 0;
+    font-weight: 500;
+}
+
+.sted p {
+    margin: 15px 0;
+    font-weight: 100;
+}
+=======
 @media screen and (max-width:900px) {
+>>>>>>> origin/master
 
     .nyheder [data-container] {
         grid-template-columns: repeat(2, 1fr);
