@@ -12,7 +12,7 @@
     <meta name="title" content="">
 
     <!-- META TEXT: SEO END -->
-    <title>Food8</title>
+    <title>Nyheder</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -26,6 +26,10 @@
             <a href="om-food8.html">OM FOOD8</a>
         </nav>
     </header>
+
+    <div class="overskrift">
+        <h1>Nyheder</h1>
+    </div>
 
     <div id="grid-container" class="nyheder">
 
@@ -74,6 +78,11 @@
                 klon.querySelector("[data-billede]").src = nyhed.acf.billede;
                 klon.querySelector("[data-manchet]").textContent = nyhed.acf.manchet;
                 klon.querySelector("[data-dato]").textContent = nyhed.acf.dato;
+
+                klon.querySelector("[data-billede]").addEventListener("click", () => {
+                    location.href = "nyhed.html?id=" + nyhed.id;
+                });
+
 
                 //                klon.querySelector("[data-textcontent]").innerHTML = nyhed.content.rendered;
                 templateModtager.appendChild(klon);

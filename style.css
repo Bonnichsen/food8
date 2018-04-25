@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+h1 {
+    font-family: "Raleway";
+}
+
 h2 {
     font-family: "Raleway";
 }
@@ -63,6 +67,14 @@ footer {
     color: white;
     height: auto;
     padding: 1.5vw;
+}
+
+/*-- OVERSKRIFT TIL HVER SIDE --*/
+
+.overskrift h1 {
+    text-align: center;
+    margin: 20px;
+    text-transform: uppercase;
 }
 
 /*-- DROPDOWN --*
@@ -224,7 +236,9 @@ footer {
 }
 
 #p_index {
-    font-family: "Fusterd Brush";
+    font-size: 30px;
+    font-weight: 400;
+    margin: 20px 0;
 }
 
 /*-- STEDER --*/
@@ -239,9 +253,15 @@ footer {
     width: 40vw;
 }
 
+.steder .img_container {
+    width: 40vw;
+    height: 40vw;
+    overflow: hidden;
+}
+
 .steder img {
     width: 100%;
-    height: 40vw;
+    height: 100%;
 }
 
 /*-- NYHEDER --*/
@@ -315,8 +335,7 @@ footer {
     width: 90vw;
 }
 
-<<<<<<< HEAD
-.sted h2 {
+<<<<<<< HEAD .sted h2 {
     margin: 15px 0;
     text-align:
 }
@@ -330,11 +349,9 @@ footer {
     margin: 15px 0;
     font-weight: 100;
 }
-=======
-@media screen and (max-width:900px) {
->>>>>>> origin/master
 
-    .nyheder [data-container] {
+=======@media screen and (max-width:900px) {
+    > > > > > > > origin/master .nyheder [data-container] {
         grid-template-columns: repeat(2, 1fr);
     }
 
