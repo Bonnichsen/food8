@@ -79,6 +79,11 @@
                 klon.querySelector("[data-manchet]").textContent = nyhed.acf.manchet;
                 klon.querySelector("[data-dato]").textContent = nyhed.acf.dato;
 
+                klon.querySelector("[data-button]").addEventListener("click", () => {
+                    location.href = "nyhed.html?id=" + nyhed.id;
+                });
+
+
                 //                klon.querySelector("[data-textcontent]").innerHTML = nyhed.content.rendered;
                 templateModtager.appendChild(klon);
                 console.log("The Klon War is over!")

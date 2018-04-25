@@ -40,42 +40,34 @@
 
     <template data-template>
        <article>
-<img src="" alt="-" data-billede>
           <p data-dato></p>
            <h2 data-overskrift></h2>
            <h3 data-manchet></h3>
            <p data-textcontent></p>
-<iframe data-video>
-</iframe>
+
        </article>
 
    </template>
 
-    <footer id="footer">
-        <div id="mail-phone">
-            <h3 class="contact_info">KONTAKT</h3>
-            <p>Telefon: +45 50 70 19 50</p>
-            <p>Mail: <a href="mailto:tg@teglvaerket.com" target="_top">tg@teglvaerket.com</a></p>
-        </div>
+    <div id="mail-phone">
+        <h3 class="contact_info">KONTAKT</h3>
+        <p>Telefon: +45 50 70 19 50</p>
+        <p>Mail: <a href="mailto:tg@teglvaerket.com" target="_top">tg@teglvaerket.com</a></p>
+    </div>
 
-        <div class="social_media_links">
-            <h3 class="SoMe">FØLG OS</h3>
-            <a href="https://www.facebook.com/food8dk/" target="_blank"><i class="fa fa-facebook-square fa-2x"></i></a>
-            <a href="https://www.instagram.com/food8dk/" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
-        </div>
+    <div class="social_media_links">
+        <h3 class="SoMe">FØLG OS</h3>
+        <a href="https://www.facebook.com/food8dk/" target="_blank"><i class="fa fa-facebook-square fa-2x"></i></a>
+        <a href="https://www.instagram.com/food8dk/" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+    </div>
 
-        <div id="adress">
-            <h3 class="adress">ADRESSE</h3>
-            <p>Food8 ApS</p>
-            <p>Langelinie 10</p>
-            <p> 2100 København Ø </p>
-        </div>
-        <!--
-<p id="copyright">&copy; Copyright. All Rights Reserved. -Made by B8, http://www.benjaminbonnichsen.dk, est. 2017.
-</p>
--->
+    <div id="adress">
+        <h3 class="adress">ADRESSE</h3>
+        <p>Food8 ApS</p>
+        <p>Langelinie 10</p>
+        <p> 2100 København Ø </p>
+    </div>
 
-    </footer>
 
 
     <script>
@@ -101,8 +93,6 @@
                 let klon = template.cloneNode(true).content;
 
                 klon.querySelector("[data-overskrift]").textContent = sted.title.rendered;
-                klon.querySelector("[data-billede]").src = sted.acf.billede;
-                klon.querySelector("[data-video]").src = sted.acf.video;
                 klon.querySelector("[data-manchet]").textContent = sted.acf.manchet;
                 klon.querySelector("[data-textcontent]").innerHTML = sted.content.rendered;
                 templateModtager.appendChild(klon);
