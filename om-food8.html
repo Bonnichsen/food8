@@ -11,11 +11,24 @@
     <meta name="title" content="">
 
     <!-- META TEXT: SEO END -->
-    <title>Food8</title>
+    <title>Om Food8</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <header>
+        <nav>
+            <a href="index.html">HOME</a>
+            <a href="steder.html">STEDER</a>
+            <a href="nyheder.html">NYHEDER</a>
+            <a href="om-food8.html">OM FOOD8</a>
+        </nav>
+    </header>
+
+    <div class="overskrift">
+        <h1>Om Food8</h1>
+    </div>
 
     <div id="grid-container" class="about">
 
@@ -27,17 +40,43 @@
 
     <template data-template>
        <article>
-          <img src="" alt="-" data-billede>
+<img src="" alt="-" data-billede>
           <p data-dato></p>
            <h2 data-overskrift></h2>
            <h3 data-manchet></h3>
            <p data-textcontent></p>
-           <iframe width="420" height="315"
-src="" data-video>
+<iframe data-video>
 </iframe>
        </article>
 
    </template>
+
+    <footer id="footer">
+        <div id="mail-phone">
+            <h3 class="contact_info">KONTAKT</h3>
+            <p>Telefon: +45 50 70 19 50</p>
+            <p>Mail: <a href="mailto:tg@teglvaerket.com" target="_top">tg@teglvaerket.com</a></p>
+        </div>
+
+        <div class="social_media_links">
+            <h3 class="SoMe">FØLG OS</h3>
+            <a href="https://www.facebook.com/food8dk/" target="_blank"><i class="fa fa-facebook-square fa-2x"></i></a>
+            <a href="https://www.instagram.com/food8dk/" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+        </div>
+
+        <div id="adress">
+            <h3 class="adress">ADRESSE</h3>
+            <p>Food8 ApS</p>
+            <p>Langelinie 10</p>
+            <p> 2100 København Ø </p>
+        </div>
+        <!--
+<p id="copyright">&copy; Copyright. All Rights Reserved. -Made by B8, http://www.benjaminbonnichsen.dk, est. 2017.
+</p>
+-->
+
+    </footer>
+
 
     <script>
         let jSonUrl = "http://benjaminbonnichsen.dk/food8/wordpress/wp-json/wp/v2/om_food8";

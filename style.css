@@ -3,6 +3,28 @@
     padding: 0;
 }
 
+h1 {
+    font-family: "Raleway";
+}
+
+h2 {
+    font-family: "Raleway";
+}
+
+h3 {
+    font-family: "Raleway";
+}
+
+p {
+    font-family: "Raleway"
+}
+
+button {
+    font-family: "Raleway";
+    font-weight: 400;
+    border: none;
+    cursor: pointer;
+}
 
 #grid-container {
     display: grid;
@@ -21,7 +43,7 @@
 header {
     width: 100vw;
     height: auto;
-    background-color: rgba(10, 70, 37, 0.41);
+    background-color: #334052;
 }
 
 nav {
@@ -33,6 +55,26 @@ nav a {
     color: white;
     margin: 1vw;
     text-decoration: none;
+    font-family: "Raleway";
+}
+
+nav a:hover {
+    font-weight: bolder;
+}
+
+footer {
+    background-color: #334052;
+    color: white;
+    height: auto;
+    padding: 1.5vw;
+}
+
+/*-- OVERSKRIFT TIL HVER SIDE --*/
+
+.overskrift h1 {
+    text-align: center;
+    margin: 20px;
+    text-transform: uppercase;
 }
 
 /*-- DROPDOWN --*
@@ -193,6 +235,12 @@ nav a {
     -webkit-border-bottom: dotted 5px rgba(101, 195, 176, 0.50);
 }
 
+#p_index {
+    font-size: 30px;
+    font-weight: 400;
+    margin: 20px 0;
+}
+
 /*-- STEDER --*/
 
 .steder [data-container] {
@@ -218,22 +266,42 @@ nav a {
 
 /*-- NYHEDER --*/
 
+.nyheder {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .nyheder [data-container] {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 1vw;
 }
 
 .nyheder article {
     width: 22vw;
+    margin: 15px;
+}
+
+.nyheder button {
+    margin-top: 10px;
 }
 
 .nyheder img {
     width: 100%;
 }
 
+.nyheder h2 {
+    margin: 7px 0;
+}
+
+.nyheder h3 {
+    font-weight: 100;
+    font-size: 14px;
+}
+
 /*-- OM FOOD8 --*/
 
 .about [data-container] {
+    margin: 50px 0 0 50px;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 50px;
 }
@@ -245,3 +313,79 @@ nav a {
 .about img {
     width: 100%;
 }
+
+
+.about p {
+    margin: 15px 0;
+}
+
+/*-----STED------*/
+
+.sted [data-container] {
+    margin: 50px 0 0 2.5vw;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+.sted article {
+    width: 90vw;
+}
+
+.sted img {
+    width: 90vw;
+}
+
+<<<<<<< HEAD .sted h2 {
+    margin: 15px 0;
+    text-align:
+}
+
+.sted h3 {
+    margin: 15px 0;
+    font-weight: 500;
+}
+
+.sted p {
+    margin: 15px 0;
+    font-weight: 100;
+}
+
+=======@media screen and (max-width:900px) {
+    > > > > > > > origin/master .nyheder [data-container] {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .nyheder article {
+        width: 35vw;
+    }
+
+}
+
+
+@media screen and (max-width:560px) {
+    .steder [data-container] {
+
+        grid-template-columns: repeat(1, 1fr);
+        max-width: 90vw;
+    }
+    .steder article {
+        width: 100%;
+
+    }
+    .steder img {
+        display: grid;
+        grid-column: 1/2;
+        height: 100%;
+    }
+
+    .steder h2 {
+        /*		text-align: center;*/
+    }
+
+    .nyheder [data-container] {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .nyheder article {
+        width: 60vw;
+    }

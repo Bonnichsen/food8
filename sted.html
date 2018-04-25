@@ -5,21 +5,33 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
-    <link rel="stylesheet" href="">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <section data-container>
-        <h1></h1>
-        <article>
-            <img src="" alt="-" data-billede>
-            <h2 data-overskrift></h2>
-            <h3 data-manchet></h3>
-            <p data-textcontent></p>
-            <button data-button="">Læs mere</button>
-        </article>
-    </section>
+    <header>
+        <nav>
+            <a href="index.html">HOME</a>
+            <a href="steder.html">STEDER</a>
+            <a href="nyheder.html">NYHEDER</a>
+            <a href="om-food8.html">OM FOOD8</a>
+        </nav>
+    </header>
+    <div id="grid-container" class="sted">
 
+        <section data-container>
+            <h1></h1>
+            <article>
+                <h2 data-overskrift></h2>
+                <img src="" alt="-" data-billede>
+
+                <h3 data-manchet></h3>
+                <p data-textcontent></p>
+                <!--            <button data-button="">Læs mere</button>-->
+            </article>
+        </section>
+    </div>
     <script>
         let url = new URL(window.location.href);
         let searchParams = new URLSearchParams(url.search);
