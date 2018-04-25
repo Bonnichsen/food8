@@ -5,8 +5,6 @@
 
 h2 {
     font-family: "Raleway";
-
-
 }
 
 h3 {
@@ -15,6 +13,13 @@ h3 {
 
 p {
     font-family: "Raleway"
+}
+
+button {
+    font-family: "Raleway";
+    font-weight: 400;
+    border: none;
+    cursor: pointer;
 }
 
 #grid-container {
@@ -263,6 +268,11 @@ nav a {
     width: 100%;
 }
 
+
 .about p {
     margin: 15px 0;
 }
+
+/*-----STEDER------*/
+
+.steder img {}
