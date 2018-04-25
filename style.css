@@ -112,10 +112,52 @@ nav a:hover {
 }
 
 footer {
+
     background-color: #334052;
     color: white;
     height: auto;
     padding: 1.5vw;
+
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 5%;
+    background-color: #334052;
+    color: white;
+    z-index: 2;
+}
+
+
+footer p {
+    font-size: 0.5em;
+    margin: 5px;
+}
+
+
+footer .instagram {
+
+    background-image: url(img/instaicon.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 6vw;
+    height: 7vw;
+    position: absolute;
+    top: 1.5vw;
+    left: 90vw;
+}
+
+footer .facebook {
+
+    background-image: url(img/faceicon.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 6vw;
+    height: 7vw;
+    position: absolute;
+    top: 1.5vw;
+    left: 80vw;
+
 }
 
 /*-- OVERSKRIFT TIL HVER SIDE --*/
@@ -449,6 +491,31 @@ footer {
     font-weight: 100;
 }
 
+
+
+@media screen and (max-width:4000px) {
+
+    footer .instagram {
+        width: 2vw;
+        height: 7vw;
+        left: 96vw;
+        top: 0.5vw;
+    }
+    footer .facebook {
+        width: 2vw;
+        height: 7vw;
+        left: 93vw;
+        top: 0.5vw;
+    }
+
+    footer p {
+        font-size: 0.8em;
+        margin: 5px;
+    }
+}
+
+
+
 @media screen and (max-width:900px) {
     .nyheder [data-container] {
         grid-template-columns: repeat(2, 1fr);
@@ -463,10 +530,22 @@ footer {
 
     }
 
+    footer .instagram {
+        width: 4vw;
+        height: 7vw;
+        left: 94vw;
+    }
+    footer .facebook {
+        width: 4vw;
+        height: 7vw;
+        left: 88vw;
+    }
+
 }
 
 
 @media screen and (max-width:560px) {
+
     .steder [data-container] {
 
         grid-template-columns: repeat(1, 1fr);
@@ -539,3 +618,91 @@ footer {
     .nyheder article {
         width: 60vw;
     }
+
+    .steder [data-container] {
+
+        grid-template-columns: repeat(1, 1fr);
+        max-width: 90vw;
+
+    }
+    .steder article {
+        width: 100%;
+
+    }
+    .steder img {
+        display: grid;
+        grid-column: 1/2;
+        height: 100%;
+    }
+
+    .steder .img_container {
+        width: 100%;
+        height: 80vw;
+    }
+
+    .stedlogo_container img {
+        width: 40vw;
+        margin-top: 20vw;
+        margin-left: 20vw;
+    }
+
+    .steder button {
+        margin-left: 65vw;
+        margin-top: -7vw;
+        font-size: 15px;
+        font-weight: 600;
+
+    }
+
+    .nyheder [data-container] {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .nyheder article {
+        width: 60vw;
+    }
+    .steder [data-container] {
+
+        grid-template-columns: repeat(1, 1fr);
+        max-width: 90vw;
+    }
+    .steder article {
+        width: 100%;
+
+    }
+    .steder img {
+        display: grid;
+        grid-column: 1/2;
+        height: 100%;
+    }
+
+    .steder h2 {
+        /*		text-align: center;*/
+    }
+
+    .stedlogo_container img {
+        height: 40vw;
+    }
+
+    .nyheder [data-container] {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .nyheder article {
+        width: 60vw;
+    }
+
+    footer .instagram {
+        width: 4vw;
+        height: 7vw;
+        left: 94vw;
+        top: 2vw;
+    }
+    footer .facebook {
+        width: 4vw;
+        height: 7vw;
+        left: 88vw;
+        top: 2vw;
+    }
+
+}
