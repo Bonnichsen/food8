@@ -323,6 +323,15 @@ footer {
     opacity: 0.85;
 }
 
+.steder button {
+    position: absolute;
+    margin-top: -2vw;
+    margin-left: 34.5vw;
+    background-color: transparent;
+    color: white;
+    font-weight: 400;
+}
+
 /*-- NYHEDER --*/
 
 .nyheder {
