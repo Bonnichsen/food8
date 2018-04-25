@@ -18,18 +18,18 @@
 
 /*-- HEADER --*/
 
-header{
+header {
     width: 100vw;
     height: auto;
     background-color: rgba(10, 70, 37, 0.41);
 }
 
-nav{
+nav {
     height: auto;
     padding: 1.5vw;
 }
 
-nav a{
+nav a {
     color: white;
     margin: 1vw;
     text-decoration: none;
@@ -47,7 +47,7 @@ nav a{
     box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
     z-index: 4;
     cursor: pointer;
-/*    display: none;*/
+    /*    display: none;*/
 }
 
 .container_drop {
@@ -226,6 +226,10 @@ nav a{
 }
 
 /*-- OM FOOD8 --*/
+
+#body_food8 {
+    background-color: #f2f2f2;
+}
 
 .about [data-container] {
     grid-template-columns: repeat(2, 1fr);
