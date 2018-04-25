@@ -268,6 +268,7 @@ footer {
 .nyheder [data-container] {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 1vw;
+    grid-column: 6/7;
 }
 
 .nyheder article {
@@ -344,8 +345,8 @@ footer {
     font-weight: 100;
 }
 
-=======@media screen and (max-width:900px) {
-    > > > > > > > origin/master .nyheder [data-container] {
+@media screen and (max-width:900px) {
+    .nyheder [data-container] {
         grid-template-columns: repeat(2, 1fr);
     }
 
