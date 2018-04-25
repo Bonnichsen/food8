@@ -78,14 +78,13 @@
                 klon.querySelector("[data-billede]").src = nyhed.acf.billede;
                 klon.querySelector("[data-manchet]").textContent = nyhed.acf.manchet;
                 klon.querySelector("[data-dato]").textContent = nyhed.acf.dato;
-<<<<<<< HEAD
+
                 klon.querySelector("[data-billede]").addEventListener("click", () => {
                     location.href = "nyhed.html?id=" + nyhed.id;
                 });
-=======
+
 
                 //                klon.querySelector("[data-textcontent]").innerHTML = nyhed.content.rendered;
->>>>>>> Food8/master
                 templateModtager.appendChild(klon);
                 console.log("The Klon War is over!")
             });
