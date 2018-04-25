@@ -112,10 +112,45 @@ nav a:hover {
 }
 
 footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 5%;
 	background-color: #334052;
 	color: white;
-	height: auto;
-	padding: 1.5vw;
+	z-index: 2;
+}
+
+
+footer p {
+	font-size: 0.5em;
+	margin: 5px;
+}
+
+
+footer .instagram {
+
+	background-image: url(img/instaicon.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 6vw;
+	height: 7vw;
+	position: absolute;
+	top: 1.5vw;
+	left: 90vw;
+}
+
+footer .facebook {
+
+	background-image: url(img/faceicon.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 6vw;
+	height: 7vw;
+	position: absolute;
+	top: 1.5vw;
+	left: 80vw;
 }
 
 /*-- OVERSKRIFT TIL HVER SIDE --*/
@@ -419,6 +454,35 @@ footer {
 	font-weight: 100;
 }
 
+
+
+@media screen and (max-width:4000px) {
+	.nyheder [data-container] {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	footer .instagram {
+		width: 2vw;
+		height: 7vw;
+		left: 96vw;
+		top: 0.5vw;
+	}
+	footer .facebook {
+		width: 2vw;
+		height: 7vw;
+		left: 93vw;
+		top: 0.5vw;
+	}
+
+	footer p {
+		font-size: 0.8em;
+		margin: 5px;
+	}
+}
+
+
+
+
+
 @media screen and (max-width:900px) {
 	.nyheder [data-container] {
 		grid-template-columns: repeat(2, 1fr);
@@ -431,6 +495,17 @@ footer {
 	.steder button {
 		margin-left: 30vw;
 
+	}
+
+	footer .instagram {
+		width: 4vw;
+		height: 7vw;
+		left: 94vw;
+	}
+	footer .facebook {
+		width: 4vw;
+		height: 7vw;
+		left: 88vw;
 	}
 
 }
@@ -509,3 +584,18 @@ footer {
 	.nyheder article {
 		width: 60vw;
 	}
+
+	footer .instagram {
+		width: 4vw;
+		height: 7vw;
+		left: 94vw;
+		top: 2vw;
+	}
+	footer .facebook {
+		width: 4vw;
+		height: 7vw;
+		left: 88vw;
+		top: 2vw;
+	}
+
+}
