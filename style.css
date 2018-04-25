@@ -54,6 +54,13 @@ nav a {
     font-family: "Raleway";
 }
 
+footer {
+    background-color: #334052;
+    color: white;
+    height: auto;
+    padding: 1.5vw;
+}
+
 /*-- DROPDOWN --*
 /*--- DROPDOWN --*/
 
@@ -298,21 +305,21 @@ nav a {
 */
 
 @media screen and (max-width:560px) {
-	.steder [data-container] {
+    .steder [data-container] {
 
-		grid-template-columns: repeat(1, 1fr);
-		max-width: 90vw;
-	}
-	.steder article {
-		width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        max-width: 90vw;
+    }
+    .steder article {
+        width: 100%;
 
-	}
-	.steder img {
-		display: grid;
-		grid-column: 1/2;
-		height: 100%;
-	}
+    }
+    .steder img {
+        display: grid;
+        grid-column: 1/2;
+        height: 100%;
+    }
 
-	.steder h2 {
-		/*		text-align: center;*/
-	}
+    .steder h2 {
+        /*		text-align: center;*/
+    }
