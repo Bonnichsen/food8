@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!--- META TEXT: SEO --->
     <meta charset="utf-8">
@@ -29,15 +30,122 @@
     <link rel="icon" type="image/png" href="https://food8.dk/wp-content/themes/monoco-theme/public/images/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="https://food8.dk/wp-content/themes/monoco-theme/public/images/favicon-16x16.png" sizes="16x16">
     <link rel="icon" type="image/png" href="https://food8.dk/wp-content/themes/monoco-theme/public/images/favicon-128.png" sizes="128x128">
+
+    <style>
+        body {
+            font-family: "Lato", sans-serif;
+        }
+
+        #inner_frame {
+            height: 120vh;
+            position: relative;
+            top: -15vw;
+        }
+
+        #outer_frame {
+            height: 90vh;
+            width: 100%;
+            top: 5vw;
+            overflow: hidden;
+        }
+
+        nav {
+            position: relative;
+            top: -3vw;
+            left: 10vw;
+        }
+
+        nav a {
+            color: white;
+        }
+
+        #open_bttn {
+            position: relative;
+            top: 0;
+            left: 3vw;
+            color: white;
+        }
+
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 800;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+            z-index: 900;
+        }
+
+        #main {
+            transition: margin-left .5s;
+            padding: 16px;
+            position: absolute;
+            z-index: 900;
+            top: 0;
+            height: 0;
+        }
+
+        @media screen and (max-height: 450px) {
+            .sidenav {
+                padding-top: 15px;
+            }
+            .sidenav a {
+                font-size: 18px;
+            }
+        }
+
+    </style>
 </head>
 
 <body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
+        <div id="outer_frame">
+            <iframe id="inner_frame" scrolling="no" src="http://benjaminbonnichsen.dk/food8/wordpress/om_food8/booking/" frameborder="0">
+        </iframe>
+        </div>
+    </div>
+
+    <div id="main">
+        <span id="open_bttn" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; book bord</span>
+        <nav>
+            <a href="index.html">HOME</a>
+            <a href="steder.html">STEDER</a>
+            <a href="nyheder.html">NYHEDER</a>
+            <a href="om-food8.html">OM FOOD8</a>
+        </nav>
+    </div>
 
     <section class="splash">
-        <iframe class="fullvid" width="1280" height="720" src="https://www.youtube.com/embed/5DoFZ7wHxqk?autoplay=1&loop=1&cc_load_policy=1rel=0&amp;controls=0&amp;showinfo=0&playlist=5DoFZ7wHxqk" frameborder="0" allowfullscreen></iframe>
+        <iframe class="fullvid" width="1280" height="720" src="https://www.youtube.com/embed/VuWsrD-z36g?playlist=VuWsrD-z36g&loop=1&autoplay=1&hd=1" frameborder="0" allowfullscreen></iframe>
 
-        <div class="logo"></div>
+        <div class="logo_forside"></div>
         <div class="frame">
 
             <div class="quote">
@@ -49,6 +157,15 @@
     </section>
 
     <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "300px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
         $(document).ready(function() {
             $('body')
                 .prepend('<div class="vidcover"></div>')
@@ -91,6 +208,7 @@
                 });
             }).resize();
         });
+
     </script>
 </body>
 
