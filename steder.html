@@ -51,11 +51,31 @@
 		<!-- Modal content -->
 		<div class="modal-content">
 			<span class="close">&times;</span>
-			<h2 class="nyhedsbrev">Vil du være den der anbefaler restauranter til dine venner?</h2>
-			<p class="nyhedsbrev">Skriv dig op til vores nyhedsbrev og få ugentlige guides og nyheder om food8s deltagende steder.</p>
+
+			<form action="/action_page.php">
+				<div class="container">
+					<h2>Vil du være den der anbefaler restauranter til dine venner?</h2>
+					<p>Skriv dig op til vores nyhedsbrev og få ugentlige guides og nyheder om food8s deltagende steder.</p>
+				</div>
+
+				<div class="container">
+					<input type="text" placeholder="Dit navn" name="name" required>
+					<input type="text" placeholder="Din E-mail" name="mail" required>
+
+				</div>
+
+				<div class="container">
+					<input type="submit" value="FORTSÆT">
+				</div>
+			</form>
+
 		</div>
 
+
+
 	</div>
+
+
 
 
 
