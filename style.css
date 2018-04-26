@@ -160,6 +160,15 @@ footer .facebook {
 
 }
 
+footer .nyhedsbrev p {
+    color: white;
+    font-weight: 600;
+    position: absolute;
+    left: 46%;
+    top: 1.5vw;
+}
+
+
 /*-- OVERSKRIFT TIL HVER SIDE --*/
 
 .overskrift h1 {
@@ -433,6 +442,9 @@ footer .facebook {
     height: 40vw;
     overflow: hidden;
     cursor: pointer;
+    =======width: 40vw;
+    height: 40vw;
+    overflow: hidden;
 }
 
 .steder img {
@@ -638,11 +650,8 @@ footer .facebook {
 
 
 
-
-
-
-
     .steder [data-container] {
+
 
         grid-template-columns: repeat(1, 1fr);
         max-width: 90vw;
@@ -659,58 +668,85 @@ footer .facebook {
         width: 100%;
     }
 
-    .steder h2 {
-        /*		text-align: center;*/
-    }
+    grid-template-columns: repeat(1,
+    1fr);
+    max-width: 90vw;
+}
 
-    .stedlogo_container {
-        cursor: pointer;
-    }
+.steder article {
+    width: 100%;
 
-    .stedlogo_container img {
-        height: 55vw;
-        width: 65vw;
-    }
+}
 
-    .steder .img_container {
-        width: 100%;
-        height: 80vw;
-        cursor: pointer;
-    }
+.steder img {
+    display: grid;
+    grid-column: 1/2;
+    height: 100%;
+    width: 100%;
+}
 
-
-    .steder button {
-        margin-left: 65vw;
-        margin-top: -7vw;
-        font-size: 15px;
-        font-weight: 600;
-
-    }
+.steder h2 {
+    /*		text-align: center;*/
+}
 
 
+.stedlogo_container {
+    cursor: pointer;
+}
 
-    .nyheder [data-container] {
-        grid-template-columns: repeat(1, 1fr);
-    }
+.stedlogo_container img {
+    height: 55vw;
+    width: 65vw;
+}
 
-    .nyheder article {
-        width: 60vw;
-    }
-
+.steder .img_container {
+    width: 100%;
+    height: 80vw;
+    cursor: pointer;
+}
 
 
 
-    footer .instagram {
-        width: 4vw;
-        height: 7vw;
-        left: 94vw;
-        top: 2vw;
-    }
-    footer .facebook {
-        width: 4vw;
-        height: 7vw;
-        left: 88vw;
-        top: 2vw;
-    }
+
+.steder button {
+    margin-left: 65vw;
+    margin-top: -7vw;
+    font-size: 15px;
+    font-weight: 600;
+
+}
+
+
+
+
+.nyheder [data-container] {
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.nyheder [data-container] {
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.nyheder article {
+    width: 60vw;
+}
+
+
+
+
+footer .instagram {
+    width: 4vw;
+    height: 7vw;
+    left: 94vw;
+    top: 2vw;
+}
+
+footer .facebook {
+    width: 4vw;
+    height: 7vw;
+    left: 88vw;
+    top: 2vw;
+}
+
 
 }
