@@ -13,6 +13,21 @@ body {
     padding: 0;
 }
 
+<<<<<<< HEAD
+@font-face {
+
+    font-family: 'fusterd_brushregular';
+    src: url('font/fusterd_brush-webfont.woff2') format('woff2'),
+    url('font/fusterd_brush-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+
+}
+
+
+=======
+>>>>>>> origin/master
 h1 {
     font-family: "Raleway";
 }
@@ -774,6 +789,10 @@ footer .nyhedsbrev p {
     width: 26vw;
     font-weight: 400;
     cursor: pointer;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+
 }
 
 .nyheder [data-button-tekst] {
@@ -788,6 +807,8 @@ footer .nyhedsbrev p {
     background-color: rgba(255, 127, 80, 0);
     text-align: right;
     z-index: 10;
+
+
 }
 
 .nyheder .boks {
@@ -797,8 +818,11 @@ footer .nyhedsbrev p {
     position: absolute;
     margin: 14vw 0 0 0;
     cursor: pointer;
+
+
 }
 
+.nyheder [data-manchet] p li {}
 
 
 
