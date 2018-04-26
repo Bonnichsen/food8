@@ -13,6 +13,20 @@ body {
     padding: 0;
 }
 
+<<<<<<< HEAD
+=======
+@font-face {
+
+    font-family: 'fusterd_brushregular';
+    src: url('font/fusterd_brush-webfont.woff2') format('woff2'),
+    url('font/fusterd_brush-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+
+}
+
+>>>>>>> Food8/master
 h1 {
     font-family: "Raleway";
 }
@@ -26,7 +40,29 @@ h3 {
 }
 
 p {
-    font-family: "Raleway"
+    font-family: "Raleway";
+}
+
+.sted a {
+    font-family: "Raleway";
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    cursor: pointer;
+    text-decoration: underline;
+    color: #384251;
+    margin-right: 10px;
+}
+
+.sted a:hover {
+    color: #7dc1b1;
+}
+
+
+
+.linkssted {
+    text-align: center;
+
 }
 
 button {
@@ -122,7 +158,7 @@ footer {
 
 footer p {
     font-size: 0.5em;
-    margin: 5px;
+    margin-top: 95%;
 }
 
 
@@ -702,8 +738,11 @@ footer .nyhedsbrev p {
 }
 
 .nyheder article {
-    width: 22vw;
-    margin: 15px;
+
+    width: 28vw;
+    margin: 10px;
+
+
 }
 
 .nyheder button {
@@ -722,6 +761,59 @@ footer .nyhedsbrev p {
     font-weight: 100;
     font-size: 14px;
 }
+
+
+.nyheder [data-dato] {
+    position: absolute;
+    margin: 16vw 2vw 0;
+    width: 26vw;
+    cursor: pointer;
+    font-size: 0.8em;
+
+}
+
+.nyheder [data-overskrift] {
+    position: absolute;
+    margin: 19vw 2vw 0;
+    width: 26vw;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.nyheder [data-manchet] {
+    position: absolute;
+    margin: 23vw 2vw 0;
+    width: 26vw;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.nyheder [data-button-tekst] {
+    position: absolute;
+    margin: 32vw 0 0 0;
+    width: 26vw;
+    font-weight: 300;
+    padding: 0 2vw 0 0;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: rgba(255, 127, 80, 0);
+    text-align: right;
+    z-index: 10;
+}
+
+.nyheder .boks {
+    background-color: rgba(255, 255, 255, 0.74);
+    height: 14vw;
+    width: 28vw;
+    position: absolute;
+    margin: 14vw 0 0 0;
+    cursor: pointer;
+}
+
+
+
+
 
 
 /*-- NYHED --*/
@@ -754,6 +846,10 @@ footer .nyhedsbrev p {
 }
 
 
+
+
+
+
 /*-- OM FOOD8 --*/
 
 .about [data-container] {
@@ -778,7 +874,8 @@ footer .nyhedsbrev p {
 /*-----STED------*/
 
 .sted [data-container] {
-    margin: 50px 0 0 2.5vw;
+
+    margin: 0px 0 30px 2.5vw;
     grid-template-columns: repeat(2, 1fr);
 
 }
@@ -810,6 +907,8 @@ footer .nyhedsbrev p {
 
 @media screen and (max-width:4000px) {
 
+
+
     footer .instagram {
         width: 2vw;
         height: 7vw;
@@ -822,6 +921,7 @@ footer .nyhedsbrev p {
         left: 93vw;
         top: 0.5vw;
     }
+
 
     footer p {
         font-size: 0.8em;
@@ -840,9 +940,65 @@ footer .nyhedsbrev p {
         width: 35vw;
     }
 
+    <<<<<<< HEAD .nyheder [data-dato] {
+        position: absolute;
+        margin: 16vw 2vw 0;
+        width: 33vw;
+        cursor: pointer;
+        font-size: 0.8em;
+
+    }
+
+    .nyheder [data-overskrift] {
+        position: absolute;
+        margin: 19vw 2vw 0;
+        width: 33vw;
+        font-size: 1em;
+        cursor: pointer;
+    }
+
+    .nyheder [data-manchet] {
+        position: absolute;
+        margin: 23vw 2vw 0;
+        width: 33vw;
+        font-weight: 400;
+        cursor: pointer;
+    }
+
+    .nyheder [data-button-tekst] {
+        position: absolute;
+        margin: 32vw 0 0 0;
+        width: 35vw;
+        font-weight: 300;
+        padding: 0 2vw 0 0;
+        cursor: pointer;
+        font-size: 15px;
+        font-weight: 600;
+        background-color: rgba(255, 127, 80, 0);
+        text-align: right;
+        z-index: 10;
+    }
+
+    .nyheder .boks {
+        background-color: rgba(255, 255, 255, 0.74);
+        height: 20vw;
+        width: 35vw;
+        position: absolute;
+        margin: 15vw 0 0 0;
+        cursor: pointer;
+    }
+
+
+
+
+
+
+
+
+
+
     .steder button {
         margin-left: 30vw;
-
     }
 
     footer .instagram {
@@ -1065,7 +1221,50 @@ footer .nyhedsbrev p {
         background-color: #374251;
         color: white;
         position: fixed;
-        top: 700px;
+        top: 95%;
         z-index: 3;
-        left: 55vw;
+        left: 50vw;
+    }
+
+
+    /*
+	-------------nyt indhold------------
+
+*/
+    form {
+        font-family: "Raleway";
+        color: white;
+    }
+
+    .container {
+        padding: 5px;
+        border: none;
+    }
+
+    .container p {
+        line-height: 25px;
+        margin-top: 10px;
+    }
+    input[type=text],
+    input[type=submit] {
+        width: 100%;
+        padding: 12px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+
+    input[type=checkbox] {
+        margin-top: 16px;
+    }
+
+    input[type=submit] {
+        background-color: #65c3b0;
+        color: white;
+        border: none;
+    }
+
+    input[type=submit]:hover {
+        opacity: 0.8;
     }
