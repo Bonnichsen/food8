@@ -335,6 +335,7 @@ footer .nyhedsbrev p {
 	-webkit-border-bottom: dotted 5px rgba(101, 195, 176, 0.50);
 }
 
+
 #p_index {
 	font-size: 30px;
 	font-weight: 400;
@@ -345,6 +346,20 @@ footer .nyhedsbrev p {
 	height: 120vh;
 	position: relative;
 	top: -160px;
+}
+
+#p_index,
+.p_h1 {
+	font-size: 30px;
+	font-weight: 400;
+	margin: 20px 0;
+}
+
+#inner_frame {
+	height: 900px;
+	position: relative;
+	top: -190px;
+
 }
 
 #outer_frame {
@@ -366,6 +381,7 @@ footer .nyhedsbrev p {
 }
 
 #open_bttn {
+
 	position: relative;
 	top: 0;
 	left: 3vw;
@@ -383,6 +399,27 @@ footer .nyhedsbrev p {
 	overflow-x: hidden;
 	transition: 0.5s;
 	padding-top: 60px;
+
+	position: relative;
+	top: 0;
+	left: 3vw;
+	color: white;
+	font-size: 30px;
+	cursor: pointer;
+}
+
+.sidenav {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 800;
+	top: 0;
+	left: 0;
+	background-color: #242323;
+	overflow-x: hidden;
+	transition: 0.5s;
+	padding-top: 60px;
+
 }
 
 .sidenav a {
@@ -424,6 +461,29 @@ footer .nyhedsbrev p {
 		font-size: 18px;
 	}
 }
+
+.some_splash .instagram {
+	background-image: url(img/instaicon.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 4vw;
+	height: 5vw;
+	position: absolute;
+	right: 6vw;
+	bottom: 0;
+}
+
+.some_splash .facebook {
+	background-image: url(img/faceicon.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 4vw;
+	height: 5vw;
+	position: absolute;
+	bottom: 0;
+	right: 1vw;
+}
+
 
 /*-- STEDER --*/
 
