@@ -35,7 +35,28 @@ h3 {
 }
 
 p {
-    font-family: "Raleway"
+    font-family: "Raleway";
+}
+
+.sted a {
+    font-family: "Raleway";
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    cursor: pointer;
+    text-decoration: underline;
+    color: #384251;
+    margin-right: 10px;
+}
+
+.sted a:hover {
+    color: #7dc1b1;
+}
+
+
+
+.linkssted {
+    text-align: center;
 }
 
 button {
@@ -564,7 +585,7 @@ footer .nyhedsbrev p {
 /*-----STED------*/
 
 .sted [data-container] {
-    margin: 50px 0 0 2.5vw;
+    margin: 0px 0 30px 2.5vw;
     grid-template-columns: repeat(2, 1fr);
 
 }
