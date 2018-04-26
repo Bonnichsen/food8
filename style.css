@@ -442,7 +442,7 @@ footer .nyhedsbrev p {
     height: 40vw;
     overflow: hidden;
     cursor: pointer;
-    =======width: 40vw;
+    width: 40vw;
     height: 40vw;
     overflow: hidden;
 }
@@ -668,9 +668,7 @@ footer .nyhedsbrev p {
         width: 100%;
     }
 
-    grid-template-columns: repeat(1,
-    1fr);
-    max-width: 90vw;
+
 }
 
 .steder article {
@@ -695,8 +693,10 @@ footer .nyhedsbrev p {
 }
 
 .stedlogo_container img {
-    height: 55vw;
-    width: 65vw;
+    height: 50vw;
+    width: 50vw;
+    margin-top: 16vw;
+    margin-left: 16vw;
 }
 
 .steder .img_container {
@@ -705,6 +705,10 @@ footer .nyhedsbrev p {
     cursor: pointer;
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/master
 .steder button {
     margin-left: 65vw;
     margin-top: -7vw;
