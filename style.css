@@ -112,10 +112,52 @@ nav a:hover {
 }
 
 footer {
+
     background-color: #334052;
     color: white;
     height: auto;
     padding: 1.5vw;
+
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 5%;
+    background-color: #334052;
+    color: white;
+    z-index: 2;
+}
+
+
+footer p {
+    font-size: 0.5em;
+    margin: 5px;
+}
+
+
+footer .instagram {
+
+    background-image: url(img/instaicon.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 6vw;
+    height: 7vw;
+    position: absolute;
+    top: 1.5vw;
+    left: 90vw;
+}
+
+footer .facebook {
+
+    background-image: url(img/faceicon.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 6vw;
+    height: 7vw;
+    position: absolute;
+    top: 1.5vw;
+    left: 80vw;
+
 }
 
 /*-- OVERSKRIFT TIL HVER SIDE --*/
@@ -290,6 +332,90 @@ footer {
     margin: 20px 0;
 }
 
+#inner_frame {
+    height: 120vh;
+    position: relative;
+    top: -160px;
+}
+
+#outer_frame {
+    height: 90vh;
+    width: 100%;
+    top: 5vw;
+    overflow: hidden;
+}
+
+.nav_splash {
+    position: relative;
+    top: -3vw;
+    left: 10vw;
+}
+
+.nav_splash a {
+    color: white;
+    font-family: "Lato", sans-serif;
+}
+
+#open_bttn {
+    position: relative;
+    top: 0;
+    left: 3vw;
+    color: white;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 800;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    z-index: 900;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+    position: absolute;
+    z-index: 900;
+    top: 0;
+    height: 0;
+}
+
+@media screen and (max-width: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
 /*-- STEDER --*/
 
 .steder [data-container] {
@@ -449,6 +575,31 @@ footer {
     font-weight: 100;
 }
 
+
+
+@media screen and (max-width:4000px) {
+
+    footer .instagram {
+        width: 2vw;
+        height: 7vw;
+        left: 96vw;
+        top: 0.5vw;
+    }
+    footer .facebook {
+        width: 2vw;
+        height: 7vw;
+        left: 93vw;
+        top: 0.5vw;
+    }
+
+    footer p {
+        font-size: 0.8em;
+        margin: 5px;
+    }
+}
+
+
+
 @media screen and (max-width:900px) {
     .nyheder [data-container] {
         grid-template-columns: repeat(2, 1fr);
@@ -463,15 +614,33 @@ footer {
 
     }
 
+    footer .instagram {
+        width: 4vw;
+        height: 7vw;
+        left: 94vw;
+    }
+    footer .facebook {
+        width: 4vw;
+        height: 7vw;
+        left: 88vw;
+    }
+
 }
 
 
 @media screen and (max-width:560px) {
+
+
+
+
+
+
+
+
     .steder [data-container] {
 
         grid-template-columns: repeat(1, 1fr);
         max-width: 90vw;
-
     }
     .steder article {
         width: 100%;
@@ -481,6 +650,15 @@ footer {
         display: grid;
         grid-column: 1/2;
         height: 100%;
+        width: 100%;
+    }
+
+    .steder h2 {
+        /*		text-align: center;*/
+    }
+
+    .stedlogo_container img {
+        height: 40vw;
     }
 
     .steder .img_container {
@@ -488,11 +666,6 @@ footer {
         height: 80vw;
     }
 
-    .stedlogo_container img {
-        width: 40vw;
-        margin-top: 20vw;
-        margin-left: 20vw;
-    }
 
     .steder button {
         margin-left: 65vw;
@@ -509,33 +682,18 @@ footer {
     .nyheder article {
         width: 60vw;
     }
-    .steder [data-container] {
 
-        grid-template-columns: repeat(1, 1fr);
-        max-width: 90vw;
+    footer .instagram {
+        width: 4vw;
+        height: 7vw;
+        left: 94vw;
+        top: 2vw;
     }
-    .steder article {
-        width: 100%;
-
-    }
-    .steder img {
-        display: grid;
-        grid-column: 1/2;
-        height: 100%;
-    }
-
-    .steder h2 {
-        /*		text-align: center;*/
+    footer .facebook {
+        width: 4vw;
+        height: 7vw;
+        left: 88vw;
+        top: 2vw;
     }
 
-    .stedlogo_container img {
-        height: 40vw;
-    }
-
-    .nyheder [data-container] {
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    .nyheder article {
-        width: 60vw;
-    }
+}

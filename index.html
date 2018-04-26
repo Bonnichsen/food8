@@ -30,13 +30,35 @@
     <link rel="icon" type="image/png" href="https://food8.dk/wp-content/themes/monoco-theme/public/images/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="https://food8.dk/wp-content/themes/monoco-theme/public/images/favicon-16x16.png" sizes="16x16">
     <link rel="icon" type="image/png" href="https://food8.dk/wp-content/themes/monoco-theme/public/images/favicon-128.png" sizes="128x128">
+
+    <style>
+
+
+    </style>
 </head>
 
 <body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
+        <div id="outer_frame">
+            <iframe id="inner_frame" scrolling="no" src="http://benjaminbonnichsen.dk/food8/wordpress/om_food8/booking/" frameborder="0">
+        </iframe>
+        </div>
+    </div>
+
+    <div id="main">
+        <span id="open_bttn" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; book bord</span>
+        <div class="nav_splash">
+            <a href="index.html">HOME</a>
+            <a href="steder.html">STEDER</a>
+            <a href="nyheder.html">NYHEDER</a>
+            <a href="om-food8.html">OM FOOD8</a>
+        </div>
+    </div>
 
     <section class="splash">
-        <iframe class="fullvid" width="1280" height="720" src="https://www.youtube.com/embed/5DoFZ7wHxqk?autoplay=1&loop=1&cc_load_policy=1rel=0&amp;controls=0&amp;showinfo=0&playlist=5DoFZ7wHxqk" frameborder="0" allowfullscreen></iframe>
+        <iframe class="fullvid" width="1280" height="720" src="https://www.youtube.com/embed/VuWsrD-z36g?playlist=VuWsrD-z36g&loop=1&autoplay=1&hd=1" frameborder="0" allowfullscreen></iframe>
 
         <div class="logo_forside"></div>
         <div class="frame">
@@ -50,6 +72,15 @@
     </section>
 
     <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "300px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
         $(document).ready(function() {
             $('body')
                 .prepend('<div class="vidcover"></div>')
