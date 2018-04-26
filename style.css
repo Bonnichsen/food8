@@ -333,9 +333,9 @@ footer .facebook {
 }
 
 #inner_frame {
-    height: 120vh;
+    height: 900px;
     position: relative;
-    top: -160px;
+    top: -190px;
 }
 
 #outer_frame {
@@ -370,7 +370,7 @@ footer .facebook {
     z-index: 800;
     top: 0;
     left: 0;
-    background-color: #111;
+    background-color: #242323;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
