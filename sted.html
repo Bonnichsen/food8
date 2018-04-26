@@ -39,7 +39,7 @@
                 <a href="" target="_blank" data-menukort></a>
                 <a href="" target="_blank" data-drinkskort></a>
                 <a href="" target="_blank" data-seperatmenu></a>
-                <a href="" target="_blank" data-seperatmenu2></a>
+                <a href="" target="_blank" data-seperatmenu2></a><br>
                 <!-- KONTROLRAPPORT -->
                 <a href="" target="_blank" data-kontrol></a>
                 <!--            <button data-button="">Læs mere</button>-->
@@ -85,6 +85,7 @@
             display.querySelector("[data-seperatmenu2]").textContent = sted.acf.seperatmenu2.title;
             display.querySelector("[data-seperatmenu2]").href = sted.acf.seperatmenu2.url;
             display.querySelector("[data-kontrol]").href = sted.acf.kontrolrapport;
+            display.querySelector("[data-kontrol]").textContent = "kontrolrapport";
             console.log("kontrol");
 
         };
