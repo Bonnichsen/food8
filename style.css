@@ -14,20 +14,17 @@ body {
 }
 
 @font-face {
-<<<<<<< HEAD
-	font-family: 'fusterd_brushregular';
-	src: url('font/fusterd_brush-webfont.woff2') format('woff2'),
-	url('font/fusterd_brush-webfont.woff') format('woff');
-	font-weight: normal;
-	font-style: normal;
-=======
     font-family: 'fusterd_brushregular';
     src: url('font/fusterd_brush-webfont.woff2') format('woff2'),
     url('font/fusterd_brush-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+    =======font-family: 'fusterd_brushregular';
+    src: url('font/fusterd_brush-webfont.woff2') format('woff2'),
+    url('font/fusterd_brush-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 
->>>>>>> origin/master
 }
 
 h1 {
@@ -574,8 +571,8 @@ footer .nyhedsbrev p {
 }
 
 .nyheder article {
-    width: 22vw;
-    margin: 15px;
+    width: 28vw;
+    margin: 10px;
 }
 
 .nyheder button {
@@ -594,6 +591,59 @@ footer .nyhedsbrev p {
     font-weight: 100;
     font-size: 14px;
 }
+
+
+.nyheder [data-dato] {
+    position: absolute;
+    margin: 16vw 2vw 0;
+    width: 26vw;
+    cursor: pointer;
+    font-size: 0.8em;
+
+}
+
+.nyheder [data-overskrift] {
+    position: absolute;
+    margin: 19vw 2vw 0;
+    width: 26vw;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.nyheder [data-manchet] {
+    position: absolute;
+    margin: 23vw 2vw 0;
+    width: 26vw;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.nyheder [data-button-tekst] {
+    position: absolute;
+    margin: 32vw 0 0 0;
+    width: 26vw;
+    font-weight: 300;
+    padding: 0 2vw 0 0;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: rgba(255, 127, 80, 0);
+    text-align: right;
+    z-index: 10;
+}
+
+.nyheder .boks {
+    background-color: rgba(255, 255, 255, 0.74);
+    height: 14vw;
+    width: 28vw;
+    position: absolute;
+    margin: 14vw 0 0 0;
+    cursor: pointer;
+}
+
+
+
+
 
 
 /*-- NYHED --*/
@@ -624,6 +674,10 @@ footer .nyhedsbrev p {
 .nyhed [data-manchet] {
     margin-bottom: 20px;
 }
+
+
+
+
 
 
 /*-- OM FOOD8 --*/
@@ -682,6 +736,8 @@ footer .nyhedsbrev p {
 
 @media screen and (max-width:4000px) {
 
+
+
     footer .instagram {
         width: 2vw;
         height: 7vw;
@@ -711,6 +767,64 @@ footer .nyhedsbrev p {
     .nyheder article {
         width: 35vw;
     }
+
+
+    .nyheder [data-dato] {
+        position: absolute;
+        margin: 16vw 2vw 0;
+        width: 33vw;
+        cursor: pointer;
+        font-size: 0.8em;
+
+    }
+
+    .nyheder [data-overskrift] {
+        position: absolute;
+        margin: 19vw 2vw 0;
+        width: 33vw;
+        font-size: 1em;
+        cursor: pointer;
+    }
+
+    .nyheder [data-manchet] {
+        position: absolute;
+        margin: 23vw 2vw 0;
+        width: 33vw;
+        font-weight: 400;
+        cursor: pointer;
+    }
+
+    .nyheder [data-button-tekst] {
+        position: absolute;
+        margin: 32vw 0 0 0;
+        width: 35vw;
+        font-weight: 300;
+        padding: 0 2vw 0 0;
+        cursor: pointer;
+        font-size: 15px;
+        font-weight: 600;
+        background-color: rgba(255, 127, 80, 0);
+        text-align: right;
+        z-index: 10;
+    }
+
+    .nyheder .boks {
+        background-color: rgba(255, 255, 255, 0.74);
+        height: 20vw;
+        width: 35vw;
+        position: absolute;
+        margin: 15vw 0 0 0;
+        cursor: pointer;
+    }
+
+
+
+
+
+
+
+
+
 
     .steder button {
         margin-left: 30vw;
