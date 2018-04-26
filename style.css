@@ -333,92 +333,88 @@ footer .facebook {
 }
 
 #inner_frame {
-            height: 120vh;
-            position: relative;
-            top: -15vw;
-        }
+    height: 120vh;
+    position: relative;
+    top: -160px;
+}
 
-        #outer_frame {
-            height: 90vh;
-            width: 100%;
-            top: 5vw;
-            overflow: hidden;
-        }
+#outer_frame {
+    height: 90vh;
+    width: 100%;
+    top: 5vw;
+    overflow: hidden;
+}
 
-        .nav_splash {
-            position: relative;
-            top: -3vw;
-            left: 10vw;
-        }
+.nav_splash {
+    position: relative;
+    top: -3vw;
+    left: 10vw;
+}
 
-        .nav_splash a {
-            color: white;
-            font-family: "Lato", sans-serif;
-        }
+.nav_splash a {
+    color: white;
+    font-family: "Lato", sans-serif;
+}
 
-        #open_bttn {
-            position: relative;
-            top: 0;
-            left: 3vw;
-            color: white;
-        }
+#open_bttn {
+    position: relative;
+    top: 0;
+    left: 3vw;
+    color: white;
+}
 
-        .sidenav {
-            height: 100%;
-            width: 0;
-            position: fixed;
-            z-index: 800;
-            top: 0;
-            left: 0;
-            background-color: #111;
-            overflow-x: hidden;
-            transition: 0.5s;
-            padding-top: 60px;
-        }
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 800;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
 
-        .sidenav a {
-            padding: 8px 8px 8px 32px;
-            text-decoration: none;
-            font-size: 25px;
-            color: #818181;
-            display: block;
-            transition: 0.3s;
-        }
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
 
-        .sidenav a:hover {
-            color: #f1f1f1;
-        }
+.sidenav a:hover {
+    color: #f1f1f1;
+}
 
-        .sidenav .closebtn {
-            position: absolute;
-            top: 0;
-            right: 25px;
-            font-size: 36px;
-            margin-left: 50px;
-            z-index: 900;
-        }
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    z-index: 900;
+}
 
-        #main {
-            transition: margin-left .5s;
-            padding: 16px;
-            position: absolute;
-            z-index: 900;
-            top: 0;
-            height: 0;
-        }
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+    position: absolute;
+    z-index: 900;
+    top: 0;
+    height: 0;
+}
 
-        @media screen and (max-height: 450px) {
-            .sidenav {
-                padding-top: 15px;
-            }
-            .sidenav a {
-                font-size: 18px;
-            }
-
-            #inner_frame{
-                top: -150vw;
-            }
-        }
+@media screen and (max-width: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
 
 /*-- STEDER --*/
 
@@ -795,4 +791,3 @@ footer .facebook {
     }
 
 }
-
