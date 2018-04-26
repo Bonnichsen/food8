@@ -762,6 +762,7 @@ footer .facebook {
         display: grid;
         grid-column: 1/2;
         height: 100%;
+        width: 100%;
     }
 
     .steder h2 {
