@@ -566,6 +566,7 @@ footer .nyhedsbrev p {
     margin-bottom: 20px;
 }
 
+
 /*-- OM FOOD8 --*/
 
 .about [data-container] {
@@ -694,9 +695,7 @@ footer .nyhedsbrev p {
         width: 100%;
     }
 
-    grid-template-columns: repeat(1,
-    1fr);
-    max-width: 90vw;
+
 }
 
 .steder article {
@@ -721,8 +720,10 @@ footer .nyhedsbrev p {
 }
 
 .stedlogo_container img {
-    height: 55vw;
-    width: 65vw;
+    height: 50vw;
+    width: 50vw;
+    margin-top: 16vw;
+    margin-left: 16vw;
 }
 
 .steder .img_container {
@@ -730,8 +731,6 @@ footer .nyhedsbrev p {
     height: 80vw;
     cursor: pointer;
 }
-
-
 
 
 .steder button {
@@ -747,6 +746,8 @@ footer .nyhedsbrev p {
 
 .nyheder [data-container] {
     grid-template-columns: repeat(1, 1fr);
+    width: 82vw;
+    margin: 2vw 0
 }
 
 .nyheder [data-container] {
@@ -754,10 +755,61 @@ footer .nyhedsbrev p {
 }
 
 .nyheder article {
-    width: 60vw;
+    width: 82vw;
+    margin: 0 0 5vw 0;
 }
 
+.nyheder [data-billede] {
+    cursor: pointer;
+    height: 80vw;
+}
 
+.nyheder [data-dato] {
+    position: absolute;
+    margin: 42vw 2vw 0;
+    width: 80vw;
+    cursor: pointer;
+    font-size: 0.8em;
+
+}
+
+.nyheder [data-overskrift] {
+    position: absolute;
+    margin: 48vw 2vw 0;
+    width: 80vw;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.nyheder [data-manchet] {
+    position: absolute;
+    margin: 56vw 2vw 0;
+    width: 80vw;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.nyheder [data-button-tekst] {
+    position: absolute;
+    margin: 74vw 0 0 0;
+    width: 82vw;
+    font-weight: 300;
+    padding: 0 2vw 0 0;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: rgba(255, 127, 80, 0);
+    text-align: right;
+}
+
+.nyheder .boks {
+    background-color: rgba(255, 255, 255, 0.74);
+    height: 40vw;
+    width: 82vw;
+    position: absolute;
+    margin: 40vw 0 0 0;
+    cursor: pointer;
+}
 
 
 footer .instagram {

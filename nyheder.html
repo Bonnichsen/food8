@@ -2,109 +2,127 @@
 <html lang="da">
 
 <head>
-	<!--- META TEXT: SEO --->
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="">
-	<meta name="author" content="">
-	<meta name="keywords" content="">
-	<link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-	<meta name="title" content="">
+    <!--- META TEXT: SEO --->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <meta name="title" content="">
 
-	<!-- META TEXT: SEO END -->
-	<title>Nyheder</title>
-	<link rel="stylesheet" href="style.css">
+    <!-- META TEXT: SEO END -->
+    <title>Nyheder</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-	<section class="logo_section">
-		<a href="index.html" class="logo"></a>
-	</section>
-	<header>
-		<nav>
-			<a href="index.html">HOME</a>
-			<a href="steder.html">STEDER</a>
-			<a href="nyheder.html">NYHEDER</a>
-			<a href="om-food8.html">OM FOOD8</a>
-		</nav>
-	</header>
+    <section class="logo_section">
+        <a href="index.html" class="logo"></a>
+    </section>
+    <header>
+        <nav>
+            <a href="index.html">HOME</a>
+            <a href="steder.html">STEDER</a>
+            <a href="nyheder.html">NYHEDER</a>
+            <a href="om-food8.html">OM FOOD8</a>
+        </nav>
+    </header>
 
 
-	<div class="overskrift">
-		<h1>Nyheder</h1>
-	</div>
+    <div class="overskrift">
+        <h1>Nyheder</h1>
+    </div>
 
-	<div id="grid-container" class="nyheder">
+    <div id="grid-container" class="nyheder">
 
-		<section data-container></section>
-
-
-	</div>
+        <section data-container></section>
 
 
-	<template data-template>
+    </div>
+
+
+    <template data-template>
        <article>
-          <img src="" alt="-" data-billede>
-          <p data-dato></p>
-           <h2 data-overskrift></h2>
-           <h3 data-manchet></h3>
+         <div class="boks" data-button></div>
+         <p data-dato data-button-dato></p>
+         <h2 data-overskrift data-button-overskrift></h2>
+           <h3 data-manchet data-button-manchet></h3>
+           <button data-button-tekst="">Læs mere</button>
+          <img src="" alt="-" data-billede data-button-image>
            <p data-textcontent></p>
-            <button data-button="">Læs mere</button>
+
        </article>
 
    </template>
 
+    <div class="boks"></div>
+    <script>
+        let jSonUrl = "http://benjaminbonnichsen.dk/food8/wordpress/wp-json/wp/v2/nyheder";
+        let display = document.querySelector("[data-templatedisplay]");
+        let template = document.querySelector("[data-template]");
+        let nyheder = [];
 
-	<script>
-		let jSonUrl = "http://benjaminbonnichsen.dk/food8/wordpress/wp-json/wp/v2/nyheder";
-		let display = document.querySelector("[data-templatedisplay]");
-		let template = document.querySelector("[data-template]");
-		let nyheder = [];
+        document.addEventListener("DOMContentLoaded", hentJson);
 
-		document.addEventListener("DOMContentLoaded", hentJson);
-
-		async function hentJson() {
-			let dataJson = await fetch(jSonUrl);
-			nyheder = await dataJson.json();
-			console.log("Stop making fetch happen Gretchen!");
-			visNyheder();
-		};
-
-
-		function visNyheder() {
-			nyheder.forEach(nyhed => {
-				console.log(nyhed);
-				let templateModtager = document.querySelector("[data-container]");
-				let klon = template.cloneNode(true).content;
-
-				klon.querySelector("[data-overskrift]").textContent = nyhed.title.rendered;
-				klon.querySelector("[data-billede]").src = nyhed.acf.billede;
-				klon.querySelector("[data-manchet]").textContent = nyhed.acf.manchet;
-				klon.querySelector("[data-dato]").textContent = nyhed.acf.dato;
-
-				klon.querySelector("[data-button]").addEventListener("click", () => {
-					location.href = "nyhed.html?id=" + nyhed.id;
-				});
+        async function hentJson() {
+            let dataJson = await fetch(jSonUrl);
+            nyheder = await dataJson.json();
+            console.log("Stop making fetch happen Gretchen!");
+            visNyheder();
+        };
 
 
-				//                klon.querySelector("[data-textcontent]").innerHTML = nyhed.content.rendered;
-				templateModtager.appendChild(klon);
-				console.log("The Klon War is over!")
-			});
-		}
-	</script>
+        function visNyheder() {
+            nyheder.forEach(nyhed => {
+                console.log(nyhed);
+                let templateModtager = document.querySelector("[data-container]");
+                let klon = template.cloneNode(true).content;
 
-	<footer>
+                klon.querySelector("[data-overskrift]").textContent = nyhed.title.rendered;
+                klon.querySelector("[data-billede]").src = nyhed.acf.billede;
+                klon.querySelector("[data-manchet]").textContent = nyhed.acf.manchet;
+                klon.querySelector("[data-dato]").textContent = nyhed.acf.dato;
 
-		<section>
-			<a href="https://www.instagram.com/food8dk/" class="instagram"></a>
-		</section>
-		<section>
-			<a href="https://www.facebook.com/food8dk/" class="facebook"></a>
-		</section>
+                klon.querySelector("[data-button]").addEventListener("click", () => {
+                    location.href = "nyhed.html?id=" + nyhed.id;
+                });
+                klon.querySelector("[data-button-image]").addEventListener("click", () => {
+                    location.href = "nyhed.html?id=" + nyhed.id;
+                });
+                klon.querySelector("[data-button-tekst]").addEventListener("click", () => {
+                    location.href = "nyhed.html?id=" + nyhed.id;
+                });
+                klon.querySelector("[data-button-dato]").addEventListener("click", () => {
+                    location.href = "nyhed.html?id=" + nyhed.id;
+                });
+                klon.querySelector("[data-button-overskrift]").addEventListener("click", () => {
+                    location.href = "nyhed.html?id=" + nyhed.id;
+                });
+                klon.querySelector("[data-button-manchet]").addEventListener("click", () => {
+                    location.href = "nyhed.html?id=" + nyhed.id;
+                });
 
-		<p>Kontakt : <br> Mail: info@food8.dk</p>
-	</footer>
+
+                //                klon.querySelector("[data-textcontent]").innerHTML = nyhed.content.rendered;
+                templateModtager.appendChild(klon);
+                console.log("The Klon War is over!")
+            });
+        }
+
+    </script>
+
+    <footer>
+
+        <section>
+            <a href="https://www.instagram.com/food8dk/" class="instagram"></a>
+        </section>
+        <section>
+            <a href="https://www.facebook.com/food8dk/" class="facebook"></a>
+        </section>
+
+        <p>Kontakt : <br> Mail: info@food8.dk</p>
+    </footer>
 
 
 </body>
