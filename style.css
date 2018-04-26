@@ -13,6 +13,7 @@ body {
     padding: 0;
 }
 
+<<<<<<< HEAD
 @font-face {
 
     font-family: 'fusterd_brushregular';
@@ -25,6 +26,8 @@ body {
 }
 
 
+=======
+>>>>>>> origin/master
 h1 {
     font-family: "Raleway";
 }
@@ -664,7 +667,7 @@ footer .nyhedsbrev p {
     }
 
     #slide9 {
-        background-image: url(img/slideshow/noho2-01.jpg);
+        background-image: url(img/slideshow/mobile/m_noho1-01.jpg);
         background-position: right;
     }
 }
@@ -947,7 +950,7 @@ footer .nyhedsbrev p {
         width: 35vw;
     }
 
-    <<<<<<< HEAD .nyheder [data-dato] {
+    .nyheder [data-dato] {
         position: absolute;
         margin: 16vw 2vw 0;
         width: 33vw;
