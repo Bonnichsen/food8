@@ -345,7 +345,7 @@ footer {
     width: 90vw;
 }
 
-<<<<<<< HEAD .sted h2 {
+.sted h2 {
     margin: 15px 0;
     text-align:
 }
@@ -386,6 +386,7 @@ footer {
         display: grid;
         grid-column: 1/2;
         height: 100%;
+        width: 100%;
     }
 
     .steder h2 {
