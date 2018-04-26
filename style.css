@@ -14,12 +14,20 @@ body {
 }
 
 @font-face {
+<<<<<<< HEAD
+	font-family: 'fusterd_brushregular';
+	src: url('font/fusterd_brush-webfont.woff2') format('woff2'),
+	url('font/fusterd_brush-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+=======
     font-family: 'fusterd_brushregular';
     src: url('font/fusterd_brush-webfont.woff2') format('woff2'),
     url('font/fusterd_brush-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
+>>>>>>> origin/master
 }
 
 h1 {
@@ -86,13 +94,6 @@ header {
     margin: 5vw 0 0 5vw;
     position: absolute;
 }
-
-
-
-
-
-
-
 
 #grid-container {
     display: grid;
@@ -356,6 +357,7 @@ footer .nyhedsbrev p {
     -webkit-border-bottom: dotted 5px rgba(101, 195, 176, 0.50);
 }
 
+
 #p_index {
     font-size: 30px;
     font-weight: 400;
@@ -366,6 +368,20 @@ footer .nyhedsbrev p {
     height: 120vh;
     position: relative;
     top: -160px;
+}
+
+#p_index,
+.p_h1 {
+    font-size: 30px;
+    font-weight: 400;
+    margin: 20px 0;
+}
+
+#inner_frame {
+    height: 900px;
+    position: relative;
+    top: -190px;
+
 }
 
 #outer_frame {
@@ -387,6 +403,7 @@ footer .nyhedsbrev p {
 }
 
 #open_bttn {
+
     position: relative;
     top: 0;
     left: 3vw;
@@ -404,6 +421,27 @@ footer .nyhedsbrev p {
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
+
+    position: relative;
+    top: 0;
+    left: 3vw;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 800;
+    top: 0;
+    left: 0;
+    background-color: #242323;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+
 }
 
 .sidenav a {
@@ -446,6 +484,29 @@ footer .nyhedsbrev p {
     }
 }
 
+.some_splash .instagram {
+    background-image: url(img/instaicon.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 4vw;
+    height: 5vw;
+    position: absolute;
+    right: 6vw;
+    bottom: 0;
+}
+
+.some_splash .facebook {
+    background-image: url(img/faceicon.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 4vw;
+    height: 5vw;
+    position: absolute;
+    bottom: 0;
+    right: 1vw;
+}
+
+
 /*-- STEDER --*/
 
 .steder [data-container] {
@@ -459,6 +520,7 @@ footer .nyhedsbrev p {
 }
 
 .steder .img_container {
+
     width: 40vw;
     height: 40vw;
     overflow: hidden;
@@ -466,6 +528,8 @@ footer .nyhedsbrev p {
     width: 40vw;
     height: 40vw;
     overflow: hidden;
+
+
 }
 
 .steder img {
@@ -560,6 +624,7 @@ footer .nyhedsbrev p {
 .nyhed [data-manchet] {
     margin-bottom: 20px;
 }
+
 
 /*-- OM FOOD8 --*/
 
@@ -690,82 +755,189 @@ footer .nyhedsbrev p {
     }
 
 
-}
-
-.steder article {
-    width: 100%;
-
-}
-
-.steder img {
-    display: grid;
-    grid-column: 1/2;
-    height: 100%;
-    width: 100%;
-}
-
-.steder h2 {
-    /*		text-align: center;*/
-}
 
 
-.stedlogo_container {
-    cursor: pointer;
-}
-
-.stedlogo_container img {
-    height: 50vw;
-    width: 50vw;
-    margin-top: 16vw;
-    margin-left: 16vw;
-}
-
-.steder .img_container {
-    width: 100%;
-    height: 80vw;
-    cursor: pointer;
-}
+    .steder h2 {
+        /*		text-align: center;*/
+    }
 
 
-.steder button {
-    margin-left: 65vw;
-    margin-top: -7vw;
-    font-size: 15px;
-    font-weight: 600;
+    .stedlogo_container {
+        cursor: pointer;
+    }
 
-}
+    .stedlogo_container img {
+
+
+        height: 50vw;
+        width: 50vw;
+        margin-top: 16vw;
+        margin-left: 16vw;
+    }
+
+    .steder .img_container {
+        width: 100%;
+        height: 80vw;
+        cursor: pointer;
+    }
+
+
+    .steder button {
+        margin-left: 65vw;
+        margin-top: -7vw;
+        font-size: 15px;
+        font-weight: 600;
+
+    }
 
 
 
 
-.nyheder [data-container] {
-    grid-template-columns: repeat(1, 1fr);
-}
+    .nyheder [data-container] {
 
-.nyheder [data-container] {
-    grid-template-columns: repeat(1, 1fr);
-}
+        grid-template-columns: repeat(1, 1fr);
+        width: 82vw;
+        margin: 2vw 0
+    }
 
-.nyheder article {
-    width: 60vw;
-}
+    .nyheder [data-container] {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .nyheder article {
+
+        width: 82vw;
+        margin: 0 0 5vw 0;
+    }
+
+    .nyheder [data-billede] {
+        cursor: pointer;
+        height: 80vw;
+    }
+
+    .nyheder [data-dato] {
+        position: absolute;
+        margin: 42vw 2vw 0;
+        width: 80vw;
+        cursor: pointer;
+        font-size: 0.8em;
+
+    }
+
+    .nyheder [data-overskrift] {
+        position: absolute;
+        margin: 48vw 2vw 0;
+        width: 80vw;
+        font-size: 1.2em;
+        cursor: pointer;
+    }
+
+    .nyheder [data-manchet] {
+        position: absolute;
+        margin: 56vw 2vw 0;
+        width: 80vw;
+        font-weight: 400;
+        cursor: pointer;
+    }
+
+    .nyheder [data-button-tekst] {
+        position: absolute;
+        margin: 74vw 0 0 0;
+        width: 82vw;
+        font-weight: 300;
+        padding: 0 2vw 0 0;
+        cursor: pointer;
+        font-size: 15px;
+        font-weight: 600;
+        background-color: rgba(255, 127, 80, 0);
+        text-align: right;
+    }
+
+    .nyheder .boks {
+        background-color: rgba(255, 255, 255, 0.74);
+        height: 40vw;
+        width: 82vw;
+        position: absolute;
+        margin: 40vw 0 0 0;
+        cursor: pointer;
+    }
+
+
+    footer .instagram {
+        width: 4vw;
+        height: 7vw;
+        left: 94vw;
+        top: 2vw;
+    }
+
+    footer .facebook {
+        width: 4vw;
+        height: 7vw;
+        left: 88vw;
+        top: 2vw;
+    }
 
 
 
 
-footer .instagram {
-    width: 4vw;
-    height: 7vw;
-    left: 94vw;
-    top: 2vw;
-}
 
-footer .facebook {
-    width: 4vw;
-    height: 7vw;
-    left: 88vw;
-    top: 2vw;
-}
+    /*modalvinde*/
+    /* The Modal (background) */
+    .nyhedsbrev {
+        color: white;
+    }
 
+    .modal {
+        display: none;
+        /* Hidden by default */
+        position: fixed;
+        /* Stay in place */
+        z-index: 1;
+        /* Sit on top */
+        padding-top: 100px;
+        /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%;
+        /* Full width */
+        height: 100%;
+        /* Full height */
+        overflow: auto;
+        /* Enable scroll if needed */
+        background-color: rgb(0, 0, 0);
+        /* Fallback color */
+        background-color: rgba(0, 0, 0, 0.4);
+        /* Black w/ opacity */
+    }
 
-}
+    /* Modal Content */
+    .modal-content {
+        background-color: #374251;
+        margin: auto;
+        padding: 20px;
+        width: 80%;
+    }
+
+    /* The Close Button */
+    .close {
+        color: #aaaaaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    #myBtn {
+        background-color: #374251;
+        color: white;
+        position: fixed;
+        top: 700px;
+        z-index: 3;
+        left: 55vw;
+    }
