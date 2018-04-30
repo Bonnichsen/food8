@@ -213,7 +213,7 @@ footer .nyhedsbrev p {
     box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
     z-index: 4;
     cursor: pointer;
-     transform: rotateY(180deg);
+    transform: rotateY(180deg);
     /*    display: none;*/
 }
 
@@ -276,7 +276,7 @@ footer .nyhedsbrev p {
     width: 20px;
     z-index: 1;
     padding: 10px;
-     transform: rotateY(180deg);
+    transform: rotateY(180deg);
     text-align: right;
 }
 
@@ -387,7 +387,7 @@ footer .nyhedsbrev p {
 #inner_frame {
     height: 900px;
     position: relative;
-    top: -190px;
+    top: -270px;
 
 }
 
@@ -428,7 +428,6 @@ footer .nyhedsbrev p {
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
-
     position: relative;
     top: 0;
     left: 3vw;
