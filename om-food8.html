@@ -44,7 +44,7 @@
     <template data-template>
        <article>
           <p data-dato></p>
-           <h2 data-overskrift></h2>
+<!--           <h2 data-overskrift></h2>-->
            <h3 data-manchet></h3>
            <p data-textcontent></p>
 
@@ -76,7 +76,7 @@
                 let templateModtager = document.querySelector("[data-container]");
                 let klon = template.cloneNode(true).content;
 
-                klon.querySelector("[data-overskrift]").textContent = sted.title.rendered;
+//                klon.querySelector("[data-overskrift]").textContent = sted.title.rendered;
                 klon.querySelector("[data-manchet]").textContent = sted.acf.manchet;
                 klon.querySelector("[data-textcontent]").innerHTML = sted.content.rendered;
                 templateModtager.appendChild(klon);
