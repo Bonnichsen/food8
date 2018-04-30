@@ -13,6 +13,7 @@ body {
     padding: 0;
 }
 
+<<<<<<< HEAD
 
 @font-face {
 
@@ -26,6 +27,8 @@ body {
 }
 
 
+=======
+>>>>>>> origin/master
 h1 {
     font-family: "Raleway";
 }
@@ -343,7 +346,7 @@ footer .nyhedsbrev p {
     width: 100vw;
     height: 100vh;
     position: fixed;
-    z-index: 199;
+    z-index: 20;
 }
 
 .quote {
@@ -353,12 +356,13 @@ footer .nyhedsbrev p {
     color: #f1f1f1;
     font-size: 5vw;
     text-align: center;
-    font-family: "Fusterd Brush";
+    font-family: "Raleway";
     width: 40vw;
     border-top: dotted 5px rgba(101, 195, 176, 0.50);
     border-bottom: dotted 5px rgba(101, 195, 176, 0.50);
     -webkit-border-top: dotted 5px rgba(101, 195, 176, 0.50);
     -webkit-border-bottom: dotted 5px rgba(101, 195, 176, 0.50);
+    z-index: 700;
 }
 
 
@@ -366,6 +370,7 @@ footer .nyhedsbrev p {
     font-size: 30px;
     font-weight: 400;
     margin: 20px 0;
+
 }
 
 #inner_frame {
@@ -1026,6 +1031,19 @@ footer .nyhedsbrev p {
 @media screen and (max-width:560px) {
 
 
+    .quote {
+        z-index: 800;
+        top: 70vw;
+        left: 13.5vw;
+        width: 74vw;
+    }
+
+    .logo_forside {
+        top: 42vw;
+        left: 26vw;
+        width: 50vw;
+        height: 60vw;
+    }
 
 
     .steder [data-container] {
