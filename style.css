@@ -6,19 +6,9 @@ body {
 	background-attachment: fixed;
 */
 	background-color: #f2f2f2;
+
 }
 
-body .steder {
-	margin-bottom: 80px;
-}
-
-body .nyhedsside {
-	margin-bottom: 80px;
-}
-
-body .om {
-	margin-bottom: 80px;
-}
 
 * {
 	margin: 0;
