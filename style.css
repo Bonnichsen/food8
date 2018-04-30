@@ -1153,74 +1153,6 @@ footer .nyhedsbrev p {
     margin-left: 16vw;
 }
 
-.nyheder [data-container] {
-
-    grid-template-columns: repeat(1, 1fr);
-    width: 82vw;
-    margin: 2vw 0
-}
-
-.nyheder [data-container] {
-    grid-template-columns: repeat(1, 1fr);
-}
-
-.nyheder article {
-
-    width: 82vw;
-    margin: 0 0 5vw 0;
-}
-
-.nyheder [data-billede] {
-    cursor: pointer;
-    height: 80vw;
-}
-
-.nyheder [data-dato] {
-    position: absolute;
-    margin: 54vw 2vw;
-    width: 80vw;
-    cursor: pointer;
-    font-size: 0.8em;
-
-}
-
-.nyheder [data-overskrift] {
-    position: absolute;
-    margin: 60vw 2vw;
-    width: 80vw;
-    font-size: 1.2em;
-    cursor: pointer;
-}
-
-.nyheder [data-manchet] {
-    position: absolute;
-    margin: 68vw 2vw;
-    width: 78vw;
-    font-weight: 400;
-    cursor: pointer;
-}
-
-.nyheder [data-button-tekst] {
-    position: absolute;
-    margin: 74vw 0 0 0;
-    width: 82vw;
-    font-weight: 300;
-    padding: 0 2vw 0 0;
-    cursor: pointer;
-    font-size: 15px;
-    font-weight: 600;
-    background-color: rgba(255, 127, 80, 0);
-    text-align: right;
-}
-
-.nyheder .boks {
-    background-color: rgba(255, 255, 255, 0.74);
-    height: 30vw;
-    width: 82vw;
-    position: absolute;
-    margin: 50vw 0 0 0;
-
-}
 
 .steder .img_container {
     width: 100%;
@@ -1247,10 +1179,6 @@ footer .nyhedsbrev p {
     margin: 2vw 0
 }
 
-.nyheder [data-container] {
-    grid-template-columns: repeat(1, 1fr);
-}
-
 .nyheder article {
 
     width: 82vw;
@@ -1264,7 +1192,7 @@ footer .nyhedsbrev p {
 
 .nyheder [data-dato] {
     position: absolute;
-    margin: 42vw 2vw 0;
+    margin: 53vw 2vw 0;
     width: 80vw;
     cursor: pointer;
     font-size: 0.8em;
@@ -1273,7 +1201,7 @@ footer .nyhedsbrev p {
 
 .nyheder [data-overskrift] {
     position: absolute;
-    margin: 48vw 2vw 0;
+    margin: 59vw 2vw 0;
     width: 80vw;
     font-size: 1.2em;
     cursor: pointer;
@@ -1281,8 +1209,8 @@ footer .nyhedsbrev p {
 
 .nyheder [data-manchet] {
     position: absolute;
-    margin: 56vw 2vw 0;
-    width: 80vw;
+    margin: 67vw 2vw 0;
+    width: 78vw;
     font-weight: 400;
     cursor: pointer;
 }
@@ -1302,10 +1230,10 @@ footer .nyhedsbrev p {
 
 .nyheder .boks {
     background-color: rgba(255, 255, 255, 0.74);
-    height: 40vw;
+    height: 30vw;
     width: 82vw;
     position: absolute;
-    margin: 40vw 0 0 0;
+    margin: 50vw 0 0 0;
     cursor: pointer;
 }
 
