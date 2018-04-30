@@ -298,6 +298,128 @@ footer .nyhedsbrev p {
     display: block;
 }
 
+#inner_frame {
+    height: 900px;
+    position: relative;
+    top: -270px;
+
+}
+
+#outer_frame {
+    height: 90vh;
+    width: 100%;
+    top: 5vw;
+    overflow: hidden;
+}
+
+#open_bttn {
+
+    position: relative;
+    top: 0;
+    left: 3vw;
+    color: white;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 800;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    position: relative;
+    top: 0;
+    left: 3vw;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 800;
+    top: 0;
+    left: 0;
+    background-color: #242323;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    z-index: 900;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+    position: absolute;
+    z-index: 900;
+    top: 0;
+    height: 1.5vw;
+    font-family: 'Raleway';
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#main p {
+    margin: 3px;
+    margin-left: 20px;
+}
+
+#book_icon {
+    background-image: url(img/bookbord.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: 0.5vw;
+    margin: 2px;
+    margin-left: 5px;
+    filter: invert(100);
+}
+
+@media screen and (max-width: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+
+    #main p {
+        margin: 3px;
+        margin-left: 35px;
+    }
+}
+
 /*-- INDEX --*/
 
 .splash {
@@ -384,113 +506,7 @@ footer .nyhedsbrev p {
     margin: 20px 0;
 }
 
-#inner_frame {
-    height: 900px;
-    position: relative;
-    top: -270px;
 
-}
-
-#outer_frame {
-    height: 90vh;
-    width: 100%;
-    top: 5vw;
-    overflow: hidden;
-}
-
-.nav_splash {
-    position: relative;
-    top: -3vw;
-    left: 10vw;
-}
-
-.nav_splash a {
-    color: white;
-    font-family: "Lato", sans-serif;
-}
-
-#open_bttn {
-
-    position: relative;
-    top: 0;
-    left: 3vw;
-    color: white;
-}
-
-.sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 800;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-    position: relative;
-    top: 0;
-    left: 3vw;
-    color: white;
-    font-size: 30px;
-    cursor: pointer;
-}
-
-.sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 800;
-    top: 0;
-    left: 0;
-    background-color: #242323;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-
-}
-
-.sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-}
-
-.sidenav a:hover {
-    color: #f1f1f1;
-}
-
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-    z-index: 900;
-}
-
-#main {
-    transition: margin-left .5s;
-    padding: 16px;
-    position: absolute;
-    z-index: 900;
-    top: 0;
-    height: 0;
-    font-family: 'Raleway';
-    font-weight: bold;
-}
-
-@media screen and (max-width: 450px) {
-    .sidenav {
-        padding-top: 15px;
-    }
-    .sidenav a {
-        font-size: 18px;
-    }
-}
 
 .some_splash .instagram {
     background-image: url(img/instaicon.png);
@@ -1076,7 +1092,6 @@ footer .nyhedsbrev p {
 @media screen and (max-width:4000px) {
 
 
-
     footer .instagram {
         width: 2vw;
         height: 7vw;
@@ -1100,6 +1115,10 @@ footer .nyhedsbrev p {
 
 
 @media screen and (max-width:900px) {
+    #main p {
+        margin: 3px;
+        margin-left: 35px;
+    }
     .some_splash .instagram {
 
         width: 6vw;
@@ -1254,10 +1273,15 @@ footer .nyhedsbrev p {
         height: 7vw;
         left: 88vw;
     }
+    #main p {
+        margin: 3px;
+        margin-left: 45px;
+    }
 }
 
 
 @media screen and (max-width:560px) {
+
 
     .some_splash .instagram {
         width: 11vw;
