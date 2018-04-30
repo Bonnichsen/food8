@@ -62,8 +62,10 @@
     </div>
 
     <div id="main">
-       <div id="book_icon"></div>
-        <span id="open_bttn" onclick="openNav()"> BOOK BORD</span>
+        <div onclick="openNav()" id="book_icon"></div>
+        <span id="open_bttn" onclick="openNav()"><p>
+            BOOK BORD
+        </p></span>
     </div>
 
     <section class="splash">
@@ -177,7 +179,7 @@
             document.getElementById("mySidenav").style.width = "0";
             document.getElementById("main").style.marginLeft = "0";
 
-            $("#main").show();
+            $("#main").fadeIn();
         }
         $(document).ready(function() {
             $('body')
