@@ -36,6 +36,22 @@
 </head>
 
 <body>
+    <div class="header">
+        <div class="dropdown">
+            <div id="myDropdown" class="dropdown-content">
+                <a href="index.html" class="nav_home">HOME</a>
+                <a href="steder.html" class="nav_steder">STEDER</a>
+                <a href="nyheder.html" class="nav_nyheder">NYHEDER</a>
+                <a href="om-food8.html" class="nav_food8">OM FOOD8</a>
+            </div>
+        </div>
+
+        <div class="container_drop">
+            <div class="bars bar1"></div>
+            <div class="bars bar2"></div>
+            <div class="bars bar3"></div>
+        </div>
+    </div>
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
@@ -46,13 +62,7 @@
     </div>
 
     <div id="main">
-        <span id="open_bttn" onclick="openNav()">&#9776; book bord</span>
-        <div class="nav_splash">
-            <a href="index.html">HOME</a>
-            <a href="steder.html">STEDER</a>
-            <a href="nyheder.html">NYHEDER</a>
-            <a href="om-food8.html">OM FOOD8</a>
-        </div>
+        <span id="open_bttn" onclick="openNav()">&#9776; BOOK BORD</span>
     </div>
 
     <section class="splash">
@@ -131,6 +141,11 @@
     </section>
 
     <script>
+        $(".container_drop").click(function() {
+            $(".container_drop").toggleClass("change");
+            $(".dropdown").slideToggle();
+        });
+
         let slideIndex = 0;
         showSlides();
 
