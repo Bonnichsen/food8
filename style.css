@@ -387,7 +387,7 @@ footer .nyhedsbrev p {
 #inner_frame {
     height: 900px;
     position: relative;
-    top: -190px;
+    top: -270px;
 
 }
 
@@ -428,7 +428,6 @@ footer .nyhedsbrev p {
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
-
     position: relative;
     top: 0;
     left: 3vw;
