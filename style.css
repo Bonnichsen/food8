@@ -202,18 +202,18 @@ footer .nyhedsbrev p {
     text-transform: uppercase;
 }
 
-/*-- DROPDOWN --*
-/*--- DROPDOWN --*/
+/*-- DROPDOWN --*/
 
 .header {
     position: fixed;
-    top: 100px;
+    top: 0;
     width: 100%;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.27);
     height: auto;
     box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
     z-index: 4;
     cursor: pointer;
+     transform: rotateY(180deg);
     /*    display: none;*/
 }
 
@@ -226,13 +226,13 @@ footer .nyhedsbrev p {
     padding: 8px 20px;
     display: block;
     cursor: pointer;
-    background-color: rgba(255, 255, 255, 0.69);
+    background-color: rgba(255, 255, 255, 0.0);
     min-width: 200px;
     border-radius: 0px 0px 30px 0px;
 }
 
 .container_drop a {
-    color: black;
+    color: white;
     padding: 10px 16px;
     text-decoration: none;
     display: block;
@@ -244,7 +244,7 @@ footer .nyhedsbrev p {
 .bar3 {
     width: 35px;
     height: 5px;
-    background-color: black;
+    background-color: white;
     margin: 6px 0;
     transition: 0.4s;
     cursor: pointer;
@@ -276,10 +276,12 @@ footer .nyhedsbrev p {
     width: 20px;
     z-index: 1;
     padding: 10px;
+     transform: rotateY(180deg);
+    text-align: right;
 }
 
 .dropdown-content a {
-    color: black;
+    color: white;
     padding: 25px 0px 10px 5px;
     text-decoration: none;
     display: block;
@@ -478,6 +480,8 @@ footer .nyhedsbrev p {
     z-index: 900;
     top: 0;
     height: 0;
+    font-family: 'Raleway';
+    font-weight: bold;
 }
 
 @media screen and (max-width: 450px) {
@@ -1049,7 +1053,7 @@ footer .nyhedsbrev p {
     }
 
     .about article {
-        width: 80vw;
+        width: 75vw;
         margin: 0;
     }
 
