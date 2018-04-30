@@ -378,10 +378,10 @@ footer .nyhedsbrev p {
     margin: 20px 0;
 }
 
-´ #inner_frame {
+#inner_frame {
     height: 900px;
     position: relative;
-    top: -270px;
+    top: -220px;
 
 }
 
