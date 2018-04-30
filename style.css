@@ -523,9 +523,17 @@ footer .nyhedsbrev p {
 }
 
 @media screen and (max-width: 450px) {
+    .frame {
+        background-color: rgba(10, 70, 37, 0.28);
+        z-index: 1;
+    }
+    .quote {
+        z-index: 2000;
+    }
 
     .fullvid {
-        display: none;
+        z-index: -800;
+        visibility: hidden;
     }
 
     #slideshow_body {
@@ -650,26 +658,19 @@ footer .nyhedsbrev p {
 }
 
 @media screen and (max-width: 415px) {
-.frame {
-    background-color: rgba(10, 70, 37, 0.26);
-    z-index: 1;
-}
-    .quote{
-        z-index: 2000;
-    }
 
     #slide3 {
-        background-image: url(img/slideshow/roedder_vin2-01.jpg);
+        background-image: url(img/slideshow/mobile/m_roedder_vin_02-01.jpg);
         background-position: left;
     }
 
     #slide6 {
-        background-image: url(img/slideshow/roedder_vin-01.jpg);
+        background-image: url(img/slideshow/mobile/m_roedder_vin-01.jpg);
         background-position: right;
     }
 
     #slide8 {
-        background-image: url(img/slideshow/un_mercato2-01.jpg);
+        background-image: url(img/slideshow/mobile/m_un_mercato-01.jpg);
         background-position: right;
     }
 
@@ -944,6 +945,19 @@ footer .nyhedsbrev p {
 
 
 @media screen and (max-width:900px) {
+    .some_splash .instagram {
+
+        width: 6vw;
+        height: 7vw;
+        right: 7.5vw;
+    }
+
+    .some_splash .facebook {
+        width: 6vw;
+        height: 7vw;
+        right: 1vw;
+    }
+
     .nyheder [data-container] {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -1020,7 +1034,18 @@ footer .nyhedsbrev p {
 
 @media screen and (max-width:560px) {
 
+    .some_splash .instagram {
 
+        width: 11vw;
+        height: 12vw;
+        right: 13.5vw;
+    }
+
+    .some_splash .facebook {
+        width: 11vw;
+        height: 12vw;
+        right: 1vw;
+    }
     .quote {
         z-index: 1900;
         top: 70vw;
